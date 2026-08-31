@@ -1,0 +1,23 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: 1n4148w
+name: 1N4148W 开关二极管
+aliases:
+  - 1N4148W
+  - C83528
+kind: pcb
+category: semiconductor
+package: SOD-123
+qty: 50
+status: 现有
+lcsc: C83528
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: switching-diode
+  voltage: 100V
+  package: SOD-123
+summary: 100 V 级小信号开关二极管，SOD-123，50 只

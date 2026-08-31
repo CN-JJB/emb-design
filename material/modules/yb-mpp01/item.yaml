@@ -1,0 +1,23 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: yb-mpp01
+name: YAHBOOM YB-MPP01-V1.0
+aliases:
+  - YB-MPP01
+  - YB-MPP01-V1.0
+kind: module
+category: module
+qty: null
+qty_label: —
+status: 现有
+devices_id: yb-mpp01
+devices_entry: ../../../devices/机器人稳压电源拓展板/INDEX.md
+warnings:
+  - 6PIN 排针是 5 V 输出，禁止从该处反向输入电压。
+notes:
+  - 与 p23c 二选一。
+  - 针序、尺寸、手册在 devices，本目录只记库存数量与状态。
+summary: 12 V→5 V 视觉主控供电；6P 排针是 5 V 输出禁止反灌

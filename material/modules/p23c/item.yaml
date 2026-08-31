@@ -1,0 +1,25 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: p23c
+name: P23C 足A 5V5A 电源板（支持 PD）
+aliases:
+  - P23C
+kind: module
+category: module
+qty: null
+qty_label: —
+status: 现有
+specs:
+  vin: 6–30V
+  vin_connectors: 5.08mm端子 / DC5.5-2.1 / XH2.54-2P×2
+  vout: 5V 5A shared
+  vout_connectors: XH2.54-2P、6PIN排针、Type-C、PD3.0 Type-C
+warnings:
+  - 两个输出端共用电源，合计 5 A。Type-C 走 PD 时必须用支持 PD 的数据线。
+notes:
+  - 与 yb-mpp01 都是视觉主控供电板，两块只会选用一块。尚未建 devices 档案。
+  - 尚未建 devices 档案，规格暂记在本卡片。
+summary: 12 V→5 V 大电流，板外走线束；与 YB-MPP01 二选一

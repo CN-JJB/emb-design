@@ -1,0 +1,21 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: sku-17423
+name: "5 A 双通道可调 BUCK（SKU:17423）"
+aliases:
+  - "SKU:17423"
+  - SKU17423
+  - 晒邦
+kind: module
+category: module
+qty: 1
+status: 已购-在途
+devices_id: sku-17423
+devices_entry: ../../../devices/DC-DC降压电源模块直流双路可调电压输出/INDEX.md
+notes:
+  - 板外使用，不在自制 PCB 上焊插座。
+  - 针序、尺寸、手册在 devices，本目录只记库存数量与状态。
+summary: 1 块在途；板外使用

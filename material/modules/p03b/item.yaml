@@ -1,0 +1,22 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: p03b
+name: 轮趣 P03B 5 V / 3.3 V 稳压模块
+aliases:
+  - P03B
+  - 轮趣P03B
+kind: module
+category: module
+qty: 1
+status: 已购
+devices_id: p03b
+devices_entry: ../../../devices/5V 3.3V开关稳压模块轮趣/INDEX.md
+pending:
+  - hole-pitch-verify
+notes:
+  - PCB 前仍需实物复核安装孔距（两份宣传图约 0.165 mm 差异）。
+  - 针序、尺寸、手册在 devices，本目录只记库存数量与状态。
+summary: 1 块；7–30 V 入，5 V / 3.3 V 出

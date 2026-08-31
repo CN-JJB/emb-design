@@ -1,0 +1,21 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: ssd1306-096
+name: 0.96″ OLED（SSD1306 128×64 I²C）
+aliases:
+  - SSD1306
+  - 0.96 OLED
+  - 0.96寸OLED
+kind: module
+category: module
+qty: null
+qty_label: —
+status: 现有
+devices_id: ssd1306-096
+devices_entry: ../../../devices/0.96寸OLED/INDEX.md
+notes:
+  - 针序、尺寸、手册在 devices，本目录只记库存数量与状态。
+summary: 数量未录；四针丝印 GND/VCC/SCL/SDA；孔内径 2 mm 不是 M3

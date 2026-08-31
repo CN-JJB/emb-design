@@ -1,0 +1,24 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: 1n4744a
+name: 1N4744A 稳压二极管
+aliases:
+  - 1N4744A
+  - C7167990
+kind: pcb
+category: semiconductor
+package: DO-41
+qty: 50
+status: 现有
+lcsc: C7167990
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: zener
+  voltage: 15V
+  power: 1W
+  package: DO-41
+summary: 15 V 1 W 稳压管，DO-41 直插，50 只

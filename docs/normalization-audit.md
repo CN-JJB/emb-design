@@ -46,3 +46,11 @@
 - 官方 KiCad 10.0：按 upstream 使用，不复制整库。
 - 私有 symbol / footprint / 3D：当前实体已迁齐；后续每个物料审计时反向核对是否有对应资产、来源和机械验证。
 - 私有库“存在”不等于“优先使用”：仍以 datasheet / 实测尺寸 / pin numbering 为最终判据。
+
+
+## Phase 1 migration-gap status — 2026-08-30
+
+- material historical INDEX/README text: **115/115 restored**.
+- devices UTF-8 source/config text: **19/19 restored**.
+- remaining non-UTF8/binary-like source files: **14**, delegated via `docs/local-ai-nonutf8-manifest.yaml`.
+- Until the 14-file local handoff is pushed and verified, Phase 1 is not fully closed.

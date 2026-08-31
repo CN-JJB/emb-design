@@ -1,0 +1,62 @@
+schema: 1
+generated: "2026-08-30"
+source_repository: "CN-JJB/embbed-projects"
+target_repository: "CN-JJB/emb-design"
+reason: "These files are not safely decodable as UTF-8 through the web GitHub connector. Preserve exact source Git blob bytes."
+files:
+  - source: "devices/六轴IMU ICM45686模块/examples/mspm0/keil/i2c/basic_read_reg.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/mspm0/keil/i2c/basic_read_reg.c"
+    git_blob_sha: "66e33a9a724521f62d4fac0b3dfdb4e51e63157f"
+    size: 7650
+  - source: "devices/六轴IMU ICM45686模块/examples/mspm0/keil/spi/basic_read_reg.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/mspm0/keil/spi/basic_read_reg.c"
+    git_blob_sha: "85503cb15ff2fafa55a446fe54ba6143dae30954"
+    size: 7607
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f103/basic-read-i2c.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f103/basic-read-i2c.c"
+    git_blob_sha: "165bfb90467458827c8f07cc0a7bd69b4cd3b29c"
+    size: 7689
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f103/basic-read-spi.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f103/basic-read-spi.c"
+    git_blob_sha: "37198e3f6813d48b38f6a2b6fbc19e9a208706d2"
+    size: 7585
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f103/ports/myiic.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f103/ports/myiic.c"
+    git_blob_sha: "e030717803317097c9a5432ba115b68fba42c265"
+    size: 9043
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f103/ports/myiic.h"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f103/ports/myiic.h"
+    git_blob_sha: "021b5439874776a6d05bd0eac9840f38d2be6c38"
+    size: 3754
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f103/ports/spi.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f103/ports/spi.c"
+    git_blob_sha: "ce6e740741b6814bcc6a6e884df71aa3a2597d99"
+    size: 3367
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f103/ports/spi.h"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f103/ports/spi.h"
+    git_blob_sha: "ffdc31b12a0202770aa5708036a0fc7bd74be695"
+    size: 664
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f407-hal/ports/myiic.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f407-hal/ports/myiic.c"
+    git_blob_sha: "468d0bde33889ef9c1595d0e4604504ae22fa08d"
+    size: 4112
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f407-hal/ports/myiic.h"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f407-hal/ports/myiic.h"
+    git_blob_sha: "e55b37d5cdba6eceadf8e968419419a4fb97a791"
+    size: 1017
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f407-hal/ports/spi.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f407-hal/ports/spi.c"
+    git_blob_sha: "9a0f552f92733b94c155a1874514045ce9d04d3f"
+    size: 3496
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f407-hal/ports/spi.h"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f407-hal/ports/spi.h"
+    git_blob_sha: "42e8d40193ceeb0a05e38651f7c8d77c98a34160"
+    size: 671
+  - source: "devices/六轴IMU ICM45686模块/examples/stm32f407-hal/read-register-data.c"
+    target: "devices/六轴IMU ICM45686模块/software/examples/stm32f407-hal/read-register-data.c"
+    git_blob_sha: "d3be3fb73acc21d50c5c702b3752a1c2426547cd"
+    size: 8248
+  - source: "devices/立创·天空星STM32F407VET6开发板-青春版/references/eda/立创梁山派·天空星开发板_2024-01-17.epro"
+    target: "devices/立创·天空星STM32F407VET6开发板-青春版/references/eda/立创梁山派·天空星开发板_2024-01-17.epro"
+    git_blob_sha: "c4e601a152eafbacd83251bac80cdf6bc17bcaad"
+    size: 30543113

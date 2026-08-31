@@ -1,0 +1,13 @@
+# Binary assets must keep exact bytes across checkouts (no line-ending conversion).
+*.pdf  -text
+*.png  -text
+*.jpg  -text
+*.jpeg -text
+*.webp -text
+*.zip  -text
+*.bin  -text
+*.step -text
+*.stp  -text
+*.stl  -text
+*.xlsx -text
+*.PcbDoc -text

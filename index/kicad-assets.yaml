@@ -42,38 +42,44 @@ private_library:
         status: ready
 
 private_3d_models:
-  note: "以下模型仍存在于 CN-JJB/embbed-projects，当前新仓库仅记录来源；待二进制迁移。"
+  note: "以下私有 3D 模型已由本地二进制迁移从 CN-JJB/embbed-projects 复制到本仓库。"
   models:
     - file: HS_CPG151101S11_MX.step
+      path: kicad/libraries/private/vibecoder.3dshapes/HS_CPG151101S11_MX.step
       old_path: kicad/libraries/private/vibecoder.3dshapes/HS_CPG151101S11_MX.step
       sha: 01d32b4443a380a77f5291aa6e9d13dadc391b47
       size: 552289
-      status: source-only
+      status: ready
     - file: INMP441_Module.step
+      path: kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.step
       old_path: kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.step
       sha: de0a68474e5a2ad7d1b10b6d3ecb86e596280d82
       size: 1052880
-      status: source-only
+      status: ready
     - file: INMP441_Module.stl
+      path: kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.stl
       old_path: kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.stl
       sha: e341fc0c64c9537fb9b169364246942ba3a63339
       size: 91884
-      status: source-only
+      status: ready
     - file: LED_RGB_3528_PLCC4.step
+      path: kicad/libraries/private/vibecoder.3dshapes/LED_RGB_3528_PLCC4.step
       old_path: kicad/libraries/private/vibecoder.3dshapes/LED_RGB_3528_PLCC4.step
       sha: 7d081f6e14466fcbbd34380c1acb096cccf13ab4
       size: 2028178
-      status: source-only
+      status: ready
     - file: RotaryEncoder_TTC_5mm.step
+      path: kicad/libraries/private/vibecoder.3dshapes/RotaryEncoder_TTC_5mm.step
       old_path: kicad/libraries/private/vibecoder.3dshapes/RotaryEncoder_TTC_5mm.step
       sha: a6d9defbfd432a2c149f1d37bff8e58fdbbcec58
       size: 4750765
-      status: source-only
+      status: ready
     - file: SS12D00G3.stp
+      path: kicad/libraries/private/vibecoder.3dshapes/SS12D00G3.stp
       old_path: kicad/libraries/private/vibecoder.3dshapes/SS12D00G3.stp
       sha: 2ff02a8838f98d92a784cfbedc9ccf5816d84de2
       size: 318875
-      status: source-only
+      status: ready
 
 thirdparty:
   path: kicad/libraries/thirdparty

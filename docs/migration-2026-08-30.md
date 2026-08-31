@@ -41,3 +41,24 @@
 ## 后续新增规则
 
 以后用户在对话中给出新器件、购买信息或库资源时，优先直接加入本仓库并同步索引。不要只上传孤立文件；必须更新可检索元数据和 KiCad 资源状态。
+
+## 2026-08-31 第二轮：本地二进制迁移完成
+
+按 `docs/local-ai-binary-migration.md` 与 `docs/local-ai-binary-manifest.yaml`，通过本地 Git/CLI 将剩余二进制资产从 `CN-JJB/embbed-projects` 复制到本仓库：
+
+- devices：88 个文件，148,890,336 字节（PDF / PNG / JPG / WebP / ZIP / BIN / STEP / PcbDoc）
+- material：24 个文件，5,926,368 字节（PNG / PDF / XLSX）
+- kicad/libraries/private/vibecoder.3dshapes：6 个文件，8,794,871 字节（STEP / STP / STL）
+
+复制以源仓库 git blob 为权威字节（`git cat-file blob HEAD:<path>`），逐文件校验：
+
+- 源 blob 的 git blob SHA 与 manifest `git_blob_sha` 一致：118/118
+- 源 blob 大小与 manifest `size` 一致：118/118
+- 目标文件 SHA-256 与源 blob SHA-256 一致：118/118
+- 目标 index blob 与 manifest `git_blob_sha` 一致：118/118
+
+为防 Windows `core.autocrlf` 造成行尾转换破坏二进制字节，新增 `.gitattributes` 将 `*.pdf *.png *.jpg *.jpeg *.webp *.zip *.bin *.step *.stp *.stl *.xlsx *.PcbDoc` 标记为 `-text`。
+
+`index/kicad-assets.yaml` 中 6 个私有 3D 模型状态已由 `source-only` 改为 `ready`，并记录本仓库实际路径（`kicad/libraries/private/vibecoder.3dshapes/...`）。
+
+提交：`3442173`（`Migrate remaining device, material, and KiCad binary assets`）

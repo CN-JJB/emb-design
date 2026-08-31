@@ -1,0 +1,24 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: tmb12a05
+name: TMB12A05 有源蜂鸣器
+aliases:
+  - TMB12A05
+kind: pcb
+category: electromechanical
+package: TMB12A05
+qty: 5
+status: 现有
+solder: friendly
+specs:
+  type: buzzer-active
+  voltage: 5V
+  size_mm: 12×9.5
+pending:
+  - footprint
+warnings:
+  - 机械孔位敏感。脚距、外径、极性图未到之前，PCB 封装不可定稿。
+summary: 5 V 有源一体式蜂鸣器，约 12×9.5 mm，5 只。脚距未核

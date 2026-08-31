@@ -1,0 +1,53 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: ttc-5p5
+name: TTC 5.5 mm 鼠标编码器
+aliases:
+  - TTC 5mm编码器
+  - TTC 5.5mm
+  - 鼠标编码器
+  - 绿芯编码器
+kind: pcb
+category: electromechanical
+package: TTC-5.5
+qty: null
+qty_label: 数量待录
+status: 现有
+solder: friendly
+specs:
+  type: mouse-encoder
+  brand: TTC
+  size: 5.5mm
+  core: 绿芯
+  pins: 3
+  pin_pitch_mm: 2.50
+  pin_span_mm: 5.00
+  pin_hole_mm: 1.00
+  mounting_tabs: 2
+  tab_width_mm: 1.80
+  tab_span_mm: 10.80
+  tab_offset_mm: 2.10
+  body_width_mm: 11.60
+  pcb_thickness_mm: 1.6
+  mounting_height_options_mm:
+    - 9
+    - 10
+    - 11
+    - 12
+    - 14
+    - 16
+  life: 500万次
+pending:
+  - qty
+files:
+  image: images/product.png
+  mechanical: mechanical/dimensions.png
+warnings:
+  - 这是鼠标滚轮编码器，不是电机增量编码器。
+  - 安装高度 H 有 9/10/11/12/14/16 mm 多档，实物未核是哪一档。焊盘孔距可按尺寸图，3D 高度先留余量。
+notes:
+  - 商品页写 5.5 mm 编码器（文件夹曾标 5 mm），以 5.5 mm 为准。
+summary: TTC 5.5 mm 绿芯鼠标编码器，脚距 2.50。数量与安装高度待核

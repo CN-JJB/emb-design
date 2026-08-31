@@ -1,0 +1,22 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: daplink
+name: DAPLink 仿真器
+aliases:
+  - DAPLink
+kind: tool
+category: debug
+qty: 1
+unit: 套
+status: 已购-在途
+specs:
+  interface: SWD
+  includes: 4P Dupont + Type-C cable
+pending:
+  - firmware-protocol
+notes:
+  - 具体固件与协议支持待确认。随附的 4P 杜邦线与 Type-C 线不单列库存。
+summary: 1 套在途；配 4P 杜邦线、Type-C 数据线；STM32/ARM SWD

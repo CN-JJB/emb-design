@@ -1,0 +1,26 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: ws2812b
+name: WS2812B
+aliases:
+  - WS2812B
+  - WS2812
+kind: pcb
+category: led
+package: 5050
+qty: 20
+status: 现有
+solder: caution
+specs:
+  type: addressable-RGB
+  voltage: 5V
+  package: 5050 SMD
+  pins: 4
+warnings:
+  - 第 1 脚方向与数据流向必须核对。
+notes:
+  - 是板载可用件，不一定非要外接灯带。
+summary: 5 V RGB 4 脚透明款 5050，20 只，可板载

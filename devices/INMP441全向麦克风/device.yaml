@@ -1,0 +1,91 @@
+# 结构化卡片。查询电压、针序、尺寸时读本文件；
+# 接线步骤、I²S 时序、资料审计读 INDEX.md 指向的 docs。
+# 未写的字段表示尚未确认，禁止按同名模块推测。
+
+id: inmp441
+name: INMP441 I²S 全向麦克风模块（圆形 14 mm）
+aliases:
+  - INMP441
+  - MK025336
+  - telesky INMP441
+  - INMP441麦克风模块
+  - INMP441全向麦克风
+category: sensor
+roles: [microphone, i2s-mic]
+chip: INMP441
+chip_vendor: TDK/InvenSense
+# 商品标题写「国产版」；芯片丝印未能从商家图唯一确认为 TDK INMP441。
+chip_identity_verified: false
+module_vendor: telesky
+sku: MK025336
+headers_soldered: true
+
+interfaces: [i2s, header-2.54]
+pins:
+  header_count: 2
+  header_type: 1x3
+  groups:
+    clock_select: [L/R, WS, SCK]
+    data_power: [SD, VDD, GND]
+  order_authority: silkscreen
+  chipen_brought_out: false
+  row_pitch_mm: 12
+  pin_pitch_mm: 2.54
+  pin_pitch_measured: false
+
+i2s:
+  role: slave
+  format: philips-i2s
+  data_bits: 24
+  slot_bits: 32
+  sck_per_ws: 64
+  sck_mhz: [0.5, 3.2]
+  ws_khz: [7.8, 50]
+  lr:
+    low: left
+    high: right
+    float_merchant_claim: left
+
+voltage:
+  vdd_operating: [1.62, 3.63]
+  vdd_merchant_claim: [1.8, 3.3]
+  first_bringup_v: 3.3
+  abs_max_v: 3.63
+  current_typ_ma:
+    at_1v8: 1.4
+    at_3v3: 2.2
+
+mechanical:
+  pcb_diameter_mm: 14
+  pcb_thickness_mm: 1
+  assembled_height_mm: 9
+  header_row_pitch_mm: 12
+  source: merchant-drawing
+  measured: false
+  acoustic_port: unconfirmed
+
+not_this_device:
+  - analog-electret
+  - PDM-mic
+  - unsoldered-header-SKU
+  - 5V-powered-mic
+
+warnings:
+  - 商品写「国产版」。电气极限按官方 INMP441 手册的 1.62–3.63 V 保守使用；禁止接 5 V。
+  - 芯片丝印、声孔在哪一面、CHIPEN 接法都没有原理图或实物照片足以唯一确认。到货后先看丝印和声孔再开外壳孔。
+  - 两排是独立 1×3，商家图标距 12 mm，不是标准 2.54 mm 双排。主 PCB 插座按两个 1×3 画，到货实测后再定封装。
+  - SD 在不驱动时三态；双麦共用 SD 时手册要求 100 kΩ 下拉。
+  - I²S 必须是 Philips 格式、每帧 64 个 SCK（24 位数据放在 32 位槽）。不要按 16 位槽去配。
+  - 商家写的 1.4 mA 是手册 1.8 V 典型值；3.3 V 典型 2.2 mA。
+  - 商家 ESP32 示例脚（GPIO14/32/15）只属于他们的演示板，不是本模块的固定 GPIO。
+  - 上电后约 2^18 个 SCK 周期内输出为 0；不要在 VDD 未上电时给 SCK/WS 时钟。
+
+files:
+  entry: INDEX.md
+  hardware: docs/hardware.md
+  audit: docs/source-audit-and-sources.md
+  photo_pinout: images/module-front-pinout.webp
+  photo_silkscreen: images/module-front-silkscreen.webp
+  mechanical_back: mechanical/pcb-14mm-back.webp
+  mechanical_overlay: mechanical/merchant-overlay-14mm.jpg
+  datasheet: references/chip/INMP441-Datasheet-DS-INMP441-00-Rev1.1.pdf

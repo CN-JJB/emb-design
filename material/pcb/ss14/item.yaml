@@ -1,0 +1,26 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: ss14
+name: SS14 肖特基
+aliases:
+  - SS14
+  - C83852
+kind: pcb
+category: semiconductor
+package: SMA
+qty: 50
+status: 现有
+lcsc: C83852
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: schottky
+  current: 1A
+  voltage: 40V
+  package: SMA (DO-214AC)
+notes:
+  - 库存肖特基只有这一种。不要按 SS34/SS33/SS36 设计。
+summary: 1 A / 40 V 肖特基，SMA，50 只。库存没有 SS34。

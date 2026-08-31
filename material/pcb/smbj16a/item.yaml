@@ -1,0 +1,23 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: smbj16a
+name: SMBJ16A TVS
+aliases:
+  - SMBJ16A
+  - C284000
+kind: pcb
+category: semiconductor
+package: SMB
+qty: 20
+status: 现有
+lcsc: C284000
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: TVS
+  polarity: unidirectional
+  package: SMB (DO-214AA)
+summary: 单向 TVS，SMB，20 只

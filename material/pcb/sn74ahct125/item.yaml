@@ -1,0 +1,29 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: sn74ahct125
+name: SN74AHCT125DR 四路缓冲
+aliases:
+  - SN74AHCT125
+  - SN74AHCT125DR
+  - C155176
+kind: pcb
+category: semiconductor
+package: SOIC-14
+qty: null
+qty_min: 1
+qty_label: ≥1
+status: 现有
+lcsc: C155176
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: buffer
+  channels: 4
+  threshold: TTL
+  package: SOIC/SOP-14
+notes:
+  - TTL 门限，用来做 3.3 V→5 V 方向。
+summary: 四路 TTL 门限缓冲，3.3 V→5 V，SOP-14

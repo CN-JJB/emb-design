@@ -1,0 +1,26 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: r-0805-4k7
+name: "4.7 kΩ 0805 ±1%"
+aliases:
+  - 4.7kΩ
+  - C17673
+  - 4.7kΩ 0805
+kind: pcb
+category: resistor
+package: 0805
+qty: 100
+status: 现有
+lcsc: C17673
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  value: 4.7kΩ
+  tolerance: "1%"
+  package: 0805
+notes:
+  - 库内电阻只有 11 个阻值，见表 pcb/README.md。表外阻值先补购再画。
+summary: "4.7 kΩ 0805 ±1%，100 只"

@@ -1,0 +1,51 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: ss12d00
+name: SS12D00 拨动开关
+aliases:
+  - SS12D00
+  - SS12D00 G3
+  - G3拨动开关
+kind: pcb
+category: electromechanical
+package: SS12D00
+qty: 40
+status: 现有
+solder: friendly
+specs:
+  type: slide-switch
+  poles: SPDT
+  pins: 3
+  current: 0.5A
+  voltage: 50V AC
+  contact_mohm: 30
+  insulation: 100MΩ at DC500V
+  dielectric: AC 500V 1 min
+  temp: "-25~+85°C"
+  life_cycles: 10000
+  body_mm: 8.5 x 3.5
+  pin_pitch_mm: 2.5
+  pin_span_mm: 5
+  body_height_mm: 3.5
+  overall_height_mm: 7.2
+  pin_thickness_mm: 0.3
+  handle_width_mm: 1.5
+  drawing: G3
+variants:
+  - id: ss12d00-5mm
+    handle_mm: 5
+    qty: 20
+  - id: ss12d00-3mm
+    handle_mm: 3
+    qty: 20
+files:
+  image: images/product.png
+  mechanical: mechanical/dimensions-g3.png
+warnings:
+  - 同名开关不同厂脚位可能不同。G3 商家图给出本体 8.5×3.5、脚距 2.5；5 mm 柄总高与图面 7.2 不同，焊盘仍须对照实物。
+notes:
+  - 尺寸图来自 G3 横柄商品页。柄高库存仍是 3 mm×20 与 5 mm×20。
+summary: SPDT 2 档 3 脚；柄高 3 mm×20 与 5 mm×20。G3 图：本体 8.5×3.5、脚距 2.5

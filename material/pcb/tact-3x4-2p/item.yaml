@@ -1,0 +1,45 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: tact-3x4-2p
+name: 3×4 小龟轻触（贴片 2 脚）
+aliases:
+  - 小龟轻触开关
+  - 乌龟微动
+  - 3x4x2
+  - 思诚达小龟
+kind: pcb
+category: electromechanical
+package: 3x4-2p-smd
+qty: null
+qty_label: 编带 20 只/份，份数待录
+status: 现有
+solder: friendly
+specs:
+  type: tactile
+  brand: 思诚达
+  pins: 2
+  body_mm: 3 x 4
+  height_mm: 2
+  button_diameter_mm: 1.75
+  current: 50mA
+  voltage: 12V DC
+  contact_mohm: 100
+  travel_mm: 0.2 ± 0.1
+  temp: "-30~+85°C"
+  pad_outer_mm: 5.5
+  pad_inner_mm: 3.4
+  pad_width_mm: 2
+pending:
+  - qty
+files:
+  image: images/product.png
+  mechanical: mechanical/dimensions.png
+warnings:
+  - 本卡是贴片 2 脚。商家同店还有 4 脚 3×4，焊盘完全不同，不要混用尺寸图。
+  - SKU 为 3×4×2 mm；商品主图按 2.5 mm 高度标注。板面净空以实物为准。
+notes:
+  - 商品页选中规格：3×4×2 mm 2P 小龟开关编带，1 份 20 个。
+summary: 3×4 贴片 2 脚小龟轻触，SKU 高 2 mm。份数待录

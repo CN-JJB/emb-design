@@ -1,0 +1,34 @@
+id: sku-17423
+name: 双通道可调 BUCK（SKU:17423）
+aliases: [SKU:17423, SKU17423, 晒邦, 双路可调BUCK, 5A双通道可调]
+category: power
+roles: [buck, dual-adjustable]
+chip: null
+module_vendor: 晒邦
+interfaces: [screw-terminal]
+voltage:
+  vin: [5.0, 32]
+  vout: [0.8, 30]
+  dropout_v: 1.2
+  iout_max_a: 5
+  iout_cont_suggest_a: 3
+  reverse_protection: true
+mechanical:
+  pcb_mm: [60, 60]
+  height_mm: 16.5
+  hole_from_edge_mm: 4
+  hole_pitch_mm: [52, 52]
+  hole_diameter_mm: 3
+  source: merchant-drawing
+  measured: false
+not_this_device: [p03b, P23C, YB-MPP01]
+warnings:
+  - 只能降压；输入至少比目标输出高 1.2 V。
+  - 两路非隔离，不要当隔离电源用。
+  - 5 A 是单路峰值标称，持续建议 ≤3 A 并做温升。
+  - 先空载调压再接负载。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware.md
+  photo: images/dual-channel-wiring-and-adjustment.png
+  mechanical: mechanical/pcb-60x60mm.png

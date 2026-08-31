@@ -1,0 +1,34 @@
+id: esp32-c3-supermini
+name: ESP32-C3 Super Mini
+aliases: [ESP32-C3 SuperMini, ESP32-C3 Super Mini, C3 supermini]
+category: mcu
+roles: [wifi-mcu]
+chip: ESP32-C3
+chip_suffix: unknown
+interfaces: [usb-c, header-2.54, uart, i2c, spi, adc]
+voltage:
+  vbus: 5
+  io_logic_v: 3.3
+pins:
+  usb_end_power: [5V, GND, 3V3]
+  rows: 8
+  row_pitch_mm: 15.24
+  gpio8: user-led-active-low
+  gpio9: boot
+  usb_dp_dm: [GPIO19, GPIO18]
+  uart0: {tx: GPIO21, rx: GPIO20}
+  boot_straps: [GPIO2, GPIO8, GPIO9]
+mechanical:
+  pcb_mm: [18.00, 22.50]
+  source: vendor-drawing
+warnings:
+  - 没有 CH340；必须用数据线走原生 USB。
+  - GPIO8/9/2 是启动配置脚；GPIO8 还接 LED。
+  - 顶视 USB 朝上时 5V/G/3.3 在右列，不要用镜像 pinout 定封装。
+  - 3.3 V IO 不耐 5 V。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware-and-pinout.md
+  schematic: electrical/schematic.png
+  mechanical: mechanical/board-18x22.5mm.png
+  datasheet: references/chip/ESP32-C3-Series-Datasheet-v2.4.pdf

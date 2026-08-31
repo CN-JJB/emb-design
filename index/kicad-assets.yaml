@@ -1,0 +1,81 @@
+schema: 1
+updated: 2026-08-30
+
+official:
+  kicad_version: "10.0"
+  manifest: kicad/libraries/public/VERSION.md
+  symbols:
+    status: available-upstream
+    note: "旧仓库曾镜像 223 个 .kicad_sym；新仓库不重复保存完整官方库。"
+  footprints:
+    status: available-upstream
+    note: "旧仓库曾镜像 155 个 .pretty / 15447 个 .kicad_mod；新仓库按 KiCad 10.0 官方库键检索。"
+  models_3d:
+    status: available-upstream
+    note: "旧仓库也未镜像完整 KiCad 官方 3D models；使用 KICAD10_3DMODEL_DIR。"
+
+private_library:
+  symbol_library:
+    path: kicad/libraries/private/vibecoder.kicad_sym
+    status: ready
+    symbols:
+      - LED_RGB_CommonAnode_1R_2A_3G_4B
+      - INMP441_Module
+  footprint_library:
+    path: kicad/libraries/private/vibecoder.pretty
+    status: ready
+    footprints:
+      - name: SW_MX_HS_CPG151101S11_1u
+        source: ebastler/marbastlib
+        status: ready
+      - name: SS12D00
+        source: CCHS-Melbourne/ESPlant
+        status: ready
+      - name: RotaryEncoder_TTC_5mm_SideMount_3Pin
+        source: custom
+        status: ready
+      - name: LED_RGB_3528_CommonAnode_PLCC4
+        source: custom
+        status: ready
+      - name: INMP441_Module_2x3_P2.54mm
+        source: custom
+        status: ready
+
+private_3d_models:
+  note: "以下模型仍存在于 CN-JJB/embbed-projects，当前新仓库仅记录来源；待二进制迁移。"
+  models:
+    - file: HS_CPG151101S11_MX.step
+      old_path: kicad/libraries/private/vibecoder.3dshapes/HS_CPG151101S11_MX.step
+      sha: 01d32b4443a380a77f5291aa6e9d13dadc391b47
+      size: 552289
+      status: source-only
+    - file: INMP441_Module.step
+      old_path: kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.step
+      sha: de0a68474e5a2ad7d1b10b6d3ecb86e596280d82
+      size: 1052880
+      status: source-only
+    - file: INMP441_Module.stl
+      old_path: kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.stl
+      sha: e341fc0c64c9537fb9b169364246942ba3a63339
+      size: 91884
+      status: source-only
+    - file: LED_RGB_3528_PLCC4.step
+      old_path: kicad/libraries/private/vibecoder.3dshapes/LED_RGB_3528_PLCC4.step
+      sha: 7d081f6e14466fcbbd34380c1acb096cccf13ab4
+      size: 2028178
+      status: source-only
+    - file: RotaryEncoder_TTC_5mm.step
+      old_path: kicad/libraries/private/vibecoder.3dshapes/RotaryEncoder_TTC_5mm.step
+      sha: a6d9defbfd432a2c149f1d37bff8e58fdbbcec58
+      size: 4750765
+      status: source-only
+    - file: SS12D00G3.stp
+      old_path: kicad/libraries/private/vibecoder.3dshapes/SS12D00G3.stp
+      sha: 2ff02a8838f98d92a784cfbedc9ccf5816d84de2
+      size: 318875
+      status: source-only
+
+thirdparty:
+  path: kicad/libraries/thirdparty
+  status: empty
+  note: "当前旧仓库也仅有 README；以后整套第三方库放这里。"

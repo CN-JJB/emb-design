@@ -1,0 +1,18 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: sn-2549
+name: SN-2549 小型端子压接钳
+aliases:
+  - SN-2549
+kind: tool
+category: crimp
+qty: 1
+status: 已购-待取
+specs:
+  for: XH2.54 / PH2.0
+notes:
+  - 有这把钳意味着 XH2.54 / PH2.0 线束可以自制，接口规格不必迁就成品线。
+summary: 压 XH2.54 / PH2.0 等小型端子，1 把待取

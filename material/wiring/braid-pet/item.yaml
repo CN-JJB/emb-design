@@ -1,0 +1,31 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: braid-pet
+name: PET 尼龙编织网管
+aliases:
+  - 编织网管
+kind: wiring
+category: harness
+qty: null
+qty_label: 见 variants
+unit: m
+status: 现有
+specs:
+  material: PET nylon braid
+variants:
+  - id: braid-pet-3mm
+    flat_width_mm: 3
+    qty: 10
+    unit: m
+  - id: braid-pet-6mm
+    flat_width_mm: 6
+    qty: 10
+    unit: m
+  - id: braid-pet-10mm
+    flat_width_mm: 10
+    qty: 10
+    unit: m
+summary: 扁宽 3 / 6 / 10 mm 各 10 m

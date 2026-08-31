@@ -1,0 +1,18 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: letsketch-labeler
+name: LETSKETCH 蓝牙热敏标签打印机
+aliases:
+  - LETSKETCH
+  - 标签打印机
+kind: tool
+category: label
+qty: 1
+status: 现有
+specs:
+  paper_mm: 30×12
+  connect: bluetooth-thermal
+summary: 使用 30×12 mm 标签纸，1 台

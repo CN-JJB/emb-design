@@ -1,0 +1,20 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: hsc8-10s
+name: HSC8 10S 管型端子压线钳
+aliases:
+  - HSC8 10S
+  - HSC8
+kind: tool
+category: crimp
+qty: 1
+status: 已购-待取
+specs:
+  range_mm2: 0.08–10
+  profile: square
+notes:
+  - 配 wiring/ferrule-ve。
+summary: 0.08–10 mm² 四边形压接，1 把待取

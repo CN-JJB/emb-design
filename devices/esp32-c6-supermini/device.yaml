@@ -1,0 +1,35 @@
+id: esp32-c6-supermini
+name: ESP32-C6 Super Mini
+aliases: [ESP32-C6 SuperMini, ESP32-C6FH4, C6 supermini]
+category: mcu
+roles: [wifi-mcu]
+chip: ESP32-C6FH4
+interfaces: [usb-c, header-2.54, uart, i2c, spi, adc, battery]
+voltage:
+  vbus: 5
+  io_logic_v: 3.3
+  battery: 1S-lipo
+pins:
+  usb_end_power: [5V, GND, 3V3]
+  rows: 10
+  gpio8: ws2812
+  gpio9: boot
+  gpio15: blue-led-active-high
+  usb_dp_dm: [GPIO13, GPIO12]
+  uart0: {tx: GPIO16, rx: GPIO17}
+mechanical:
+  pcb_mm: [26.04, 18.00]
+  header_span_mm: 22.86
+  source: vendor-drawing
+  row_pitch_same_as_c3: true
+warnings:
+  - 与 C3 从 USB 端对齐后第 1 针都是 5V；不要用「USB 在左」的文字翻转电源列。
+  - GPIO8/9 启动脚；GPIO12/13 是原生 USB。
+  - 仅单节带保护板锂电池；B+/B− 焊接前核极性。
+  - 彩色引脚图把几乎每脚都画成 UART/I2C/SPI，不能当外设能力清单。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware-and-pinout.md
+  schematic: electrical/schematic.png
+  mechanical_front: mechanical/board-front-26x18mm.png
+  datasheet: references/chip/ESP32-C6-Series-Datasheet-v1.5.pdf

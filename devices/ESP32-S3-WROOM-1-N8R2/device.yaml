@@ -1,0 +1,92 @@
+# 结构化卡片。查询电压、针序、尺寸时读本文件；
+# 接线步骤、烧录、资料审计读 INDEX.md 指向的 docs。
+# 未写的字段表示尚未确认，禁止按同名模组或开发板推测。
+
+id: esp32-s3-wroom-1-n8r2
+name: ESP32-S3-WROOM-1-N8R2
+aliases:
+  - ESP32-S3-WROOM-1-N8R2
+  - WROOM-1 N8R2
+  - ESP32-S3-WROOM-1
+  - ESP32-S3 WROOM N8R2
+category: mcu
+roles: [wifi-mcu, rf-module]
+chip: ESP32-S3
+chip_variant: ESP32-S3R2
+# 芯片手册 v2.2：ESP32-S3R2 标 EOL，升级为 ESP32-S3RH2（同为 2 MB Quad PSRAM）。
+# 模组规格书 v1.8 仍列 N8R2。新批次以丝印和 esptool 为准。
+chip_variant_note: S3R2-EOL-upgraded-to-S3RH2
+module_vendor: Espressif
+antenna: pcb
+
+interfaces: [wifi, bluetooth-le, usb-fs, uart, i2c, i2s, spi, adc, castellated]
+voltage:
+  vdd33: [3.0, 3.6]
+  vdd33_typ: 3.3
+  abs_max_v: 3.6
+  external_supply_min_a: 0.5
+  io_logic_v: 3.3
+  vdd_spi: 3.3
+memory:
+  flash_mb: 8
+  flash_spi: quad
+  psram_mb: 2
+  psram_spi: quad
+  gpio35_36_37_available: true
+
+pins:
+  count: 41
+  pitch_mm: 1.27
+  usb_d_minus: GPIO19
+  usb_d_plus: GPIO20
+  uart0: {tx: GPIO43, rx: GPIO44}
+  en: CHIP_PU
+  strapping: [GPIO0, GPIO3, GPIO45, GPIO46]
+  boot:
+    spi: {GPIO0: 1}
+    joint_download: {GPIO0: 0, GPIO46: 0}
+
+mechanical:
+  pcb_mm: [18.0, 25.5, 3.1]
+  tolerance_xy_mm: 0.2
+  tolerance_z_mm: 0.15
+  pad_pitch_mm: 1.27
+  antenna_keepout_mm: 6
+  source: espressif-datasheet-v1.8
+  measured: false
+  ambient_c: [-40, 85]
+
+not_this_device:
+  - ESP32-S3-WROOM-1U
+  - ESP32-S3-WROOM-1-N8R8
+  - ESP32-S3-WROOM-1-N16R8
+  - ESP32-S3-WROOM-1-N16R16VA
+  - ESP32-S3-WROOM-2
+  - ESP32-S3-DevKitC-1
+  - ESP32-S3-MINI-1
+
+warnings:
+  - 这是 SMT 模组，不是 DevKit。不要把开发板排针图套到这 41 个铸锡孔上。
+  - 本料号是 PCB 天线的 WROOM-1，不是带 U.FL 的 WROOM-1U（1U 长度 19.2 mm）。
+  - 不是 N8R8：Octal PSRAM 会占用 GPIO35/36/37。N8R2 的 35/36/37 可用。
+  - 3.3 V IO，Vih 上限 VDD+0.3 V，禁止直接接 5 V。
+  - 外部 3.3 V 电源能力不小于 0.5 A。EN 不要悬空；手册建议约 10 kΩ + 1 µF 上电延时。
+  - 下载模式需要 GPIO0=0 且 GPIO46=0。GPIO46 默认内部下拉；不要在下载时把它拉高。
+  - USB 在 GPIO19（D−）/ GPIO20（D+）。天线 keepout 在 1/40 脚一端，底板不要铺地、不要放金属。
+  - 芯片手册把 ESP32-S3R2 标 EOL 并升级为 S3RH2；模组表仍列 N8R2。以实物丝印为准。
+
+files:
+  entry: INDEX.md
+  hardware: docs/hardware-and-pinout.md
+  bringup: docs/bring-up-and-flashing.md
+  sources: docs/official-sources.md
+  audit: docs/source-audit.md
+  photo: images/module-top.png
+  pinout: images/pin-layout-top.png
+  mechanical: mechanical/module-18x25.5mm.png
+  land_pattern: mechanical/land-pattern.png
+  typical_application: electrical/typical-application.png
+  block: electrical/module-block.png
+  module_datasheet: references/chip/ESP32-S3-WROOM-1-WROOM-1U-Datasheet-v1.8.pdf
+  chip_datasheet: references/chip/ESP32-S3-Series-Datasheet-v2.2.pdf
+  trm: references/chip/ESP32-S3-Technical-Reference-Manual-v1.8.pdf

@@ -11,7 +11,7 @@
 | 原理图 PDF、引脚分配图 PDF、嘉立创 `.epro` | 本板设计依据，收入 `electrical/` 与 `references/eda/` |
 | ST DS8626 Rev12、RM0090 Rev22、勘误 ES0182 | 日常查阅，`references/chip/` |
 | 15 个基础 SPL 例程 + 空白模板 | 本板教程，`software/board-examples/` |
-| 板背面图、宣传页 | 青春版识别，`images/` |
+| 板背面图、宣传页 | 背面实物图进 `images/`；商家宣传页进 `references/vendor/promotion/`，仅用于识别 |
 | 商家第 04 章旧手册 | 与官方新版重复且更旧 | **已删除** |
 | Keil 安装包、CubeProgrammer、CH340/ST-Link 驱动、串口工具、DFP、标准库 ZIP | 通用工具，不是本板资料 | **已删除**（约 1.5 GB+） |
 | 1.72 GB 视频 7z | 教程视频，不是本板规格 | **已删除** |
@@ -33,7 +33,7 @@
 - [RM0090 Rev 22](references/chip/RM0090-Rev22.pdf)
 - [勘误 ES0182](references/chip/ES0182-STM32F405-407-Errata.pdf)
 - [板级例程](software/board-examples/)
-- [宣传页](images/promotion/)
+- [商家宣传页（仅用于识别，不作为规格权威）](references/vendor/promotion/)
 - [背面](images/board-back.png)
 
 ## 使用前必看

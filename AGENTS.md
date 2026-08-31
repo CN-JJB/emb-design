@@ -52,3 +52,16 @@
 厂家 datasheet / 官方机械图 > KiCad 官方库 > 已核验第三方库 > 实测/用户提供资料 > 未核验社区资源。
 
 任何自建或修改 footprint / 3D model 都要记录来源和复核结论。
+
+
+## 已有资料规范化
+
+迁移完成不等于整理完成。对历史资料必须逐器件、逐物料做内容审计：
+
+1. 先确认资料归属：`devices`（模块怎么用）、`material`（手上有什么/分立件规格）、`kicad`（EDA 资产）。
+2. 再按内容归档：照片→images，机械图/STEP→mechanical/model，原理图→electrical，芯片手册→references/chip 或 datasheets，驱动/例程→software。
+3. 商家宣传图只能作为识别/来源参考，放 vendor reference，并明确“非规格权威”；不得与实物照片混在 images 里。
+4. 混合包、其它器件例程、通用安装器、重复/过时资料不得留在具体器件目录里。
+5. `material/_inbox/` 是隔离区：未确认型号的原始资料可以暂存，但 AI 选型与 PCB 封装决策不得引用它。
+6. 每次整理必须同步检查 `device.yaml/item.yaml` 的 `files:`、`INDEX.md`、catalog 和 KiCad 索引引用。
+7. 规范化进度记录在 `docs/normalization-audit.md`。只有标为 `normalized` 的条目才表示目录结构与索引已完成一次人工/AI 内容审计。

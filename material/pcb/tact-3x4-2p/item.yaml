@@ -37,6 +37,7 @@ pending:
 files:
   image: images/product.png
   mechanical: mechanical/dimensions.png
+  datasheet: datasheets/tact-3x4-2p-merchant.pdf
 warnings:
   - 本卡是贴片 2 脚。商家同店还有 4 脚 3×4，焊盘完全不同，不要混用尺寸图。
   - SKU 为 3×4×2 mm；商品主图按 2.5 mm 高度标注。板面净空以实物为准。

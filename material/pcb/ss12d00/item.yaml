@@ -44,6 +44,7 @@ variants:
 files:
   image: images/product.png
   mechanical: mechanical/dimensions-g3.png
+  datasheet: datasheets/SS12D00-G3.pdf
 warnings:
   - 同名开关不同厂脚位可能不同。G3 商家图给出本体 8.5×3.5、脚距 2.5；5 mm 柄总高与图面 7.2 不同，焊盘仍须对照实物。
 notes:

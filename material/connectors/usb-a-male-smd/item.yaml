@@ -39,6 +39,8 @@ pending:
 files:
   image: images/product.png
   mechanical: mechanical/dimensions.png
+  datasheet: datasheets/AM90-2011-revC.pdf
+  mechanical_pdf: mechanical/merchant-mechanical-drawing.pdf
 warnings:
   - 商品页额定 DC12V / 0.1A，不要当大电流 USB 供电口用。
   - 商家注明手工测量可能有 0.5–1 mm 误差，封装按尺寸图画完仍须对实物。

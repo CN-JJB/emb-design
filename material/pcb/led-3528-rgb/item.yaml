@@ -33,6 +33,9 @@ pending:
   - qty
 files:
   mechanical: mechanical/dimensions.png
+  side_view: mechanical/side-view.png
+  recommended_land_pattern: mechanical/recommended-land-pattern.png
+  pinout_internal: datasheets/pinout-internal-circuit.png
 warnings:
   - 共阳。第 2 脚是 COM+，1/3/4 分别是 R/G/B 阴极，不要按共阴或 WS2812B 画。
   - 必须串限流电阻。过流或电压尖峰会烧灯。

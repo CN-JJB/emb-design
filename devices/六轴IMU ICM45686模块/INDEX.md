@@ -11,7 +11,7 @@
 | 尺寸图 | 15.000×18.000 mm，孔 Ø3.000、孔心距 13.500 mm | `mechanical/` |
 | 原理图 | ME6211C33M5G-N LDO；H3 7P / H2 3P | `electrical/` |
 | ICM-45686 DS rev1.0 | 芯片手册 | `references/chip/` |
-| InvenSense 驱动与多平台例程 | 推荐软件 | `driver/`、`examples/` |
+| InvenSense 驱动与多平台例程 | 推荐软件 | `software/driver/`、`software/examples/` |
 
 原理图标题曾残留 `lsm6dsv`，以丝印和 `WHO_AM_I=0xE9` 为准。
 

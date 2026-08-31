@@ -52,5 +52,7 @@
 
 - material historical INDEX/README text: **115/115 restored**.
 - devices UTF-8 source/config text: **19/19 restored**.
-- remaining non-UTF8/binary-like source files: **14**, delegated via `docs/local-ai-nonutf8-manifest.yaml`.
-- Until the 14-file local handoff is pushed and verified, Phase 1 is not fully closed.
+- remaining non-UTF8/binary-like source files: **14/14 restored by local AI** in commit `25c83ef835b920444965f42640fe8a5dc49c7e6c`.
+- Web-side verification: all 14 target paths exist; Git blob SHA and size match the manifest exactly.
+- Full Phase 1 closure check: all 118 source material Markdown files are present in the target; all 33 device C/H/INO/SYSCFG/EPRO source files are present, with ICM45686 driver/examples normalized under `software/`.
+- **Phase 1 status: CLOSED.**

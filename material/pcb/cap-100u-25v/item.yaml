@@ -1,0 +1,25 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: cap-100u-25v
+name: 100 µF / 25 V 铝电解
+aliases:
+  - DHC025M107E114S1AA
+  - C46550690
+kind: pcb
+category: capacitor
+package: radial
+qty: 100
+status: 现有
+lcsc: C46550690
+lcsc_trust: official
+solder: friendly
+specs:
+  mpn: DHC025M107E114S1AA
+  size: D6.3×L11
+  height_mm: 11
+notes:
+  - 直插电解高度均为 11 mm。板上方要插模块时垂直净空必须留够。
+summary: 100 µF / 25 V 铝电解，D6.3×L11，高度 11 mm

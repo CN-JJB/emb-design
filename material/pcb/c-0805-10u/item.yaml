@@ -1,0 +1,24 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: c-0805-10u
+name: 10 µF 0805 X5R 16 V
+aliases:
+  - C380332
+kind: pcb
+category: capacitor
+package: 0805
+qty: 20
+status: 现有
+lcsc: C380332
+lcsc_trust: official
+solder: friendly
+specs:
+  package: 0805
+  value: 10uF
+  voltage: 16V
+  dielectric: X5R
+  mpn: TCC0805X5R106K160FT
+summary: 0805 10 µF 0805 X5R 16 V

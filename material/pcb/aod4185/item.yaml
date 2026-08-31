@@ -1,0 +1,29 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: aod4185
+name: AOD4185 P-MOS
+aliases:
+  - AOD4185
+  - C400894
+kind: pcb
+category: semiconductor
+package: TO-252
+qty: 5
+status: 现有
+lcsc: C400894
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: P-MOS
+  vds: "-40V"
+  id: "-40A"
+  rds_on: 19mΩ
+  package: TO-252 (DPAK)
+warnings:
+  - 只有 5 颗，没有余量。需要 5 颗以上的拓扑必须先补购。
+notes:
+  - TO-252 大散热焊盘需要较大烙铁头。手焊仍标 friendly。
+summary: P 沟道 −40 V/−40 A/19 mΩ，TO-252，只有 5 颗

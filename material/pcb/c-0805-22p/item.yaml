@@ -1,0 +1,25 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: c-0805-22p
+name: 22 pF 0805 C0G
+aliases:
+  - C1804
+kind: pcb
+category: capacitor
+package: 0805
+qty: null
+qty_label: 一批
+status: 现有
+lcsc: C1804
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  package: 0805
+  value: 22pF
+  tolerance: "5%"
+  voltage: 50V
+  dielectric: C0G/NP0
+summary: 0805 22 pF 0805 C0G

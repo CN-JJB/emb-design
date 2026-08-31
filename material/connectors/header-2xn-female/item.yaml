@@ -1,0 +1,24 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: header-2xn-female
+name: 2×N 双排排母
+aliases:
+  - 双排排母
+  - 2xN 排母
+kind: connector
+category: header
+package: 2.54mm
+qty: null
+qty_label: 已补货，数量待录
+status: 已购
+specs:
+  pitch_mm: 2.54
+  form: female-2xn
+pending:
+  - qty
+notes:
+  - 无双排排母时的退路仍然成立：用两条 1×20P 单排母并排代替，PCB 焊盘照常按 2×20 画。
+summary: 2×N 双排排母，2026-08-21 确认已补货，数量未录

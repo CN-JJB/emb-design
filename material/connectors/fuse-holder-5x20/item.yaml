@@ -1,0 +1,26 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: fuse-holder-5x20
+name: 5×20 mm PCB 保险丝座
+aliases:
+  - 5x20 保险丝座
+  - fuse holder
+kind: connector
+category: fuse-holder
+package: 5x20-pcb
+qty: 10
+status: 现有
+specs:
+  type: fuse-holder
+  fuse_size: 5x20mm
+  mount: PCB
+pending:
+  - footprint
+warnings:
+  - 不同座子脚距差异大。底面脚位尺寸图未到之前，PCB 封装不可定稿。
+notes:
+  - 配套 T5A / T10A 玻璃管在 pcb/fuse-5x20-t5a 与 fuse-5x20-t10a。没有汽车插片方案。
+summary: PCB 焊板式 5×20 保险丝座 10 只；脚距未核

@@ -1,0 +1,1605 @@
+# 物料与工具总目录。AI 检索：先读本文件，按 id / aliases / kind / category 选出物料，
+# 再打开该目录的 item.yaml 与 INDEX.md；手册只在该项自己的文件夹里。
+# 模块的针序与 PDF 在 devices/，用 devices_id 跳转，不要在这边复制一份。
+# 未列入 items: 的文件夹表示尚未登记。
+
+schema_version: 1
+updated: 2026-08-28
+
+items:
+  - id: r-0805-0r
+    name: "0 Ω 0805 ±1%"
+    aliases:
+      - 0Ω
+      - C17477
+      - 0Ω 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-0r
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17477
+    summary: "0 Ω 0805 ±1%，100 只"
+
+  - id: r-0805-10
+    name: "10 Ω 0805 ±1%"
+    aliases:
+      - 10Ω
+      - C17415
+      - 10Ω 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-10
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17415
+    summary: "10 Ω 0805 ±1%，100 只"
+
+  - id: r-0805-100
+    name: "100 Ω 0805 ±1%"
+    aliases:
+      - 100Ω
+      - C17408
+      - 100Ω 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-100
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17408
+    summary: "100 Ω 0805 ±1%，100 只"
+
+  - id: r-0805-120
+    name: "120 Ω 0805 ±1%"
+    aliases:
+      - 120Ω
+      - C17437
+      - 120Ω 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-120
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17437
+    summary: "120 Ω 0805 ±1%，100 只"
+
+  - id: r-0805-220
+    name: "220 Ω 0805 ±1%"
+    aliases:
+      - 220Ω
+      - C17557
+      - 220Ω 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-220
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17557
+    summary: "220 Ω 0805 ±1%，100 只"
+
+  - id: r-0805-330
+    name: "330 Ω 0805 ±1%"
+    aliases:
+      - 330Ω
+      - C17630
+      - 330Ω 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-330
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17630
+    summary: "330 Ω 0805 ±1%，100 只"
+
+  - id: r-0805-1k
+    name: "1 kΩ 0805 ±1%"
+    aliases:
+      - 1kΩ
+      - C17513
+      - 1kΩ 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-1k
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17513
+    summary: "1 kΩ 0805 ±1%，100 只"
+
+  - id: r-0805-4k7
+    name: "4.7 kΩ 0805 ±1%"
+    aliases:
+      - 4.7kΩ
+      - C17673
+      - 4.7kΩ 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-4k7
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17673
+    summary: "4.7 kΩ 0805 ±1%，100 只"
+
+  - id: r-0805-10k
+    name: "10 kΩ 0805 ±1%"
+    aliases:
+      - 10kΩ
+      - C38522
+      - 10kΩ 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-10k
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C38522
+    summary: "10 kΩ 0805 ±1%，100 只"
+
+  - id: r-0805-47k
+    name: "47 kΩ 0805 ±1%"
+    aliases:
+      - 47kΩ
+      - C17713
+      - 47kΩ 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-47k
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C17713
+    summary: "47 kΩ 0805 ±1%，100 只"
+
+  - id: r-0805-100k
+    name: "100 kΩ 0805 ±1%"
+    aliases:
+      - 100kΩ
+      - C149504
+      - 100kΩ 0805
+    kind: pcb
+    category: resistor
+    path: pcb/r-0805-100k
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 0805
+    lcsc: C149504
+    summary: "100 kΩ 0805 ±1%，100 只"
+
+  - id: c-0805-22p
+    name: 22 pF 0805 C0G
+    aliases:
+      - C1804
+    kind: pcb
+    category: capacitor
+    path: pcb/c-0805-22p
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 一批
+    status: 现有
+    package: 0805
+    lcsc: C1804
+    summary: 0805 22 pF 0805 C0G
+
+  - id: c-0805-100n
+    name: 100 nF 0805 X7R
+    aliases:
+      - C38141
+    kind: pcb
+    category: capacitor
+    path: pcb/c-0805-100n
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 一批
+    status: 现有
+    package: 0805
+    lcsc: C38141
+    summary: 0805 100 nF 0805 X7R
+
+  - id: c-0805-1u
+    name: 1 µF 0805 X7R
+    aliases:
+      - C879294
+    kind: pcb
+    category: capacitor
+    path: pcb/c-0805-1u
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 一批
+    status: 现有
+    package: 0805
+    lcsc: C879294
+    summary: 0805 1 µF 0805 X7R
+
+  - id: c-0805-10u
+    name: 10 µF 0805 X5R 16 V
+    aliases:
+      - C380332
+    kind: pcb
+    category: capacitor
+    path: pcb/c-0805-10u
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 0805
+    lcsc: C380332
+    summary: 0805 10 µF 0805 X5R 16 V
+
+  - id: cap-22u-50v
+    name: 22 µF / 50 V 铝电解
+    aliases:
+      - ERG50V22M5X11
+      - C47344185
+    kind: pcb
+    category: capacitor
+    path: pcb/cap-22u-50v
+    card: item.yaml
+    entry: INDEX.md
+    qty: 60
+    status: 现有
+    package: radial
+    lcsc: C47344185
+    summary: 22 µF / 50 V 铝电解，D5×L11，高度 11 mm
+
+  - id: cap-100u-10v
+    name: 100 µF / 10 V 铝电解
+    aliases:
+      - 01EC5194SHC100UF10V
+      - C503218
+    kind: pcb
+    category: capacitor
+    path: pcb/cap-100u-10v
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: radial
+    lcsc: C503218
+    summary: 100 µF / 10 V 铝电解，D6.3×L11，高度 11 mm
+
+  - id: cap-100u-25v
+    name: 100 µF / 25 V 铝电解
+    aliases:
+      - DHC025M107E114S1AA
+      - C46550690
+    kind: pcb
+    category: capacitor
+    path: pcb/cap-100u-25v
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: radial
+    lcsc: C46550690
+    summary: 100 µF / 25 V 铝电解，D6.3×L11，高度 11 mm
+
+  - id: cap-470u-10v
+    name: 470 µF / 10 V 铝电解
+    aliases:
+      - KMG 10V470
+      - C349987
+    kind: pcb
+    category: capacitor
+    path: pcb/cap-470u-10v
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: radial
+    lcsc: C349987
+    summary: 470 µF / 10 V 铝电解，D6.3×L11，高度 11 mm
+
+  - id: aod4185
+    name: AOD4185 P-MOS
+    aliases:
+      - AOD4185
+      - C400894
+    kind: pcb
+    category: semiconductor
+    path: pcb/aod4185
+    card: item.yaml
+    entry: INDEX.md
+    qty: 5
+    status: 现有
+    package: TO-252
+    lcsc: C400894
+    summary: P 沟道 −40 V/−40 A/19 mΩ，TO-252，只有 5 颗
+
+  - id: bss138
+    name: BSS138 N-MOS
+    aliases:
+      - BSS138
+      - C52895
+    kind: pcb
+    category: semiconductor
+    path: pcb/bss138
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    package: SOT-23
+    lcsc: C52895
+    summary: 小信号逻辑电平 N-MOS，SOT-23，10 只
+
+  - id: ss14
+    name: SS14 肖特基
+    aliases:
+      - SS14
+      - C83852
+    kind: pcb
+    category: semiconductor
+    path: pcb/ss14
+    card: item.yaml
+    entry: INDEX.md
+    qty: 50
+    status: 现有
+    package: SMA
+    lcsc: C83852
+    summary: 1 A / 40 V 肖特基，SMA，50 只。库存没有 SS34。
+
+  - id: 1n4148w
+    name: 1N4148W 开关二极管
+    aliases:
+      - 1N4148W
+      - C83528
+    kind: pcb
+    category: semiconductor
+    path: pcb/1n4148w
+    card: item.yaml
+    entry: INDEX.md
+    qty: 50
+    status: 现有
+    package: SOD-123
+    lcsc: C83528
+    summary: 100 V 级小信号开关二极管，SOD-123，50 只
+
+  - id: 1n4744a
+    name: 1N4744A 稳压二极管
+    aliases:
+      - 1N4744A
+      - C7167990
+    kind: pcb
+    category: semiconductor
+    path: pcb/1n4744a
+    card: item.yaml
+    entry: INDEX.md
+    qty: 50
+    status: 现有
+    package: DO-41
+    lcsc: C7167990
+    summary: 15 V 1 W 稳压管，DO-41 直插，50 只
+
+  - id: smbj16a
+    name: SMBJ16A TVS
+    aliases:
+      - SMBJ16A
+      - C284000
+    kind: pcb
+    category: semiconductor
+    path: pcb/smbj16a
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: SMB
+    lcsc: C284000
+    summary: 单向 TVS，SMB，20 只
+
+  - id: pesd1can
+    name: PESD1CAN CAN ESD
+    aliases:
+      - PESD1CAN
+      - PESD1CAN-U
+      - C15771
+    kind: pcb
+    category: semiconductor
+    path: pcb/pesd1can
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: SOT-23
+    lcsc: C15771
+    summary: CAN 双通道 ESD，SOT-23，20 只；手册在本目录
+
+  - id: sn65hvd230
+    name: SN65HVD230DR CAN 收发器
+    aliases:
+      - SN65HVD230
+      - SN65HVD230DR
+      - C12084
+    kind: pcb
+    category: semiconductor
+    path: pcb/sn65hvd230
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: ≥1
+    status: 现有
+    package: SOIC-8
+    lcsc: C12084
+    summary: 3.3 V CAN 收发器，SOP-8
+
+  - id: sn74ahct125
+    name: SN74AHCT125DR 四路缓冲
+    aliases:
+      - SN74AHCT125
+      - SN74AHCT125DR
+      - C155176
+    kind: pcb
+    category: semiconductor
+    path: pcb/sn74ahct125
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: ≥1
+    status: 现有
+    package: SOIC-14
+    lcsc: C155176
+    summary: 四路 TTL 门限缓冲，3.3 V→5 V，SOP-14
+
+  - id: pptc-1812-0a5
+    name: PPTC 0.5 A / 30 V 1812
+    aliases:
+      - PPTC 0.5A
+      - C18198331
+    kind: pcb
+    category: protection
+    path: pcb/pptc-1812-0a5
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    package: 1812
+    lcsc: C18198331
+    pending:
+      - vmax
+    summary: 自恢复保险丝 0.5 A / 30 V，1812，10 只
+
+  - id: pptc-1812-1a1
+    name: PPTC 1.1 A / 33 V 1812
+    aliases:
+      - PPTC 1.1A
+      - C181347
+    kind: pcb
+    category: protection
+    path: pcb/pptc-1812-1a1
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    package: 1812
+    lcsc: C181347
+    pending:
+      - vmax
+    summary: 自恢复保险丝 1.1 A / 33 V，1812，10 只
+
+  - id: fuse-5x20-t5a
+    name: 5×20 mm T5A 慢断玻璃管
+    aliases:
+      - T5A
+      - 5x20 T5A
+    kind: pcb
+    category: protection
+    path: pcb/fuse-5x20-t5a
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 5x20
+    summary: T5A 慢断玻璃管 100 只；座子另计
+
+  - id: fuse-5x20-t10a
+    name: 5×20 mm T10A 慢断玻璃管
+    aliases:
+      - T10A
+      - 5x20 T10A
+    kind: pcb
+    category: protection
+    path: pcb/fuse-5x20-t10a
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 5x20
+    summary: T10A 慢断玻璃管 100 只；座子另计
+
+  - id: ss12d00
+    name: SS12D00 拨动开关
+    aliases:
+      - SS12D00
+      - SS12D00 G3
+      - G3拨动开关
+    kind: pcb
+    category: electromechanical
+    path: pcb/ss12d00
+    card: item.yaml
+    entry: INDEX.md
+    qty: 40
+    status: 现有
+    package: SS12D00
+    summary: SPDT 2 档 3 脚；柄高 3 mm×20 与 5 mm×20。G3 图：本体 8.5×3.5、脚距 2.5
+
+  - id: tact-6x6
+    name: 6×6 轻触开关
+    aliases:
+      - 6x6
+      - 轻触开关
+    kind: pcb
+    category: electromechanical
+    path: pcb/tact-6x6
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 一批（三档高度）
+    status: 现有
+    package: 6x6
+    pending:
+      - footprint
+    summary: 6×6 四脚轻触，高度 5 / 12 / 17 mm 三档
+
+  - id: tact-3x4-2p
+    name: 3×4 小龟轻触（贴片 2 脚）
+    aliases:
+      - 小龟轻触开关
+      - 乌龟微动
+      - 3x4x2
+      - 思诚达小龟
+    kind: pcb
+    category: electromechanical
+    path: pcb/tact-3x4-2p
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 编带 20 只/份，份数待录
+    status: 现有
+    package: 3x4-2p-smd
+    pending:
+      - qty
+    summary: 3×4 贴片 2 脚小龟轻触，SKU 高 2 mm。份数待录
+
+  - id: tmb12a05
+    name: TMB12A05 有源蜂鸣器
+    aliases:
+      - TMB12A05
+    kind: pcb
+    category: electromechanical
+    path: pcb/tmb12a05
+    card: item.yaml
+    entry: INDEX.md
+    qty: 5
+    status: 现有
+    package: TMB12A05
+    pending:
+      - footprint
+    summary: 5 V 有源一体式蜂鸣器，约 12×9.5 mm，5 只。脚距未核
+
+  - id: ttc-5p5
+    name: TTC 5.5 mm 鼠标编码器
+    aliases:
+      - TTC 5mm编码器
+      - TTC 5.5mm
+      - 鼠标编码器
+      - 绿芯编码器
+    kind: pcb
+    category: electromechanical
+    path: pcb/ttc-5p5
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 数量待录
+    status: 现有
+    package: TTC-5.5
+    pending:
+      - qty
+    summary: TTC 5.5 mm 绿芯鼠标编码器，脚距 2.50。数量与安装高度待核
+
+  - id: act45b-101
+    name: ACT45B-101-2P-TL003 共模电感
+    aliases:
+      - ACT45B-101-2P-TL003
+      - C88056
+    kind: pcb
+    category: electromechanical
+    path: pcb/act45b-101
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: ≥1
+    status: 现有
+    package: SMD-4P
+    lcsc: C88056
+    summary: 100 µH CAN 共模滤波，约 4.5×3.2 mm
+
+  - id: led-0805-mix
+    name: 0805 LED 混色包
+    aliases:
+      - 0805 LED
+      - C2295
+    kind: pcb
+    category: led
+    path: pcb/led-0805-mix
+    card: item.yaml
+    entry: INDEX.md
+    qty: 50
+    status: 现有
+    package: 0805
+    lcsc: C2295
+    summary: 红/黄/蓝/绿/白各 10，共 50；红灯参考 C2295
+
+  - id: ws2812b
+    name: WS2812B
+    aliases:
+      - WS2812B
+      - WS2812
+    kind: pcb
+    category: led
+    path: pcb/ws2812b
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 5050
+    summary: 5 V RGB 4 脚透明款 5050，20 只，可板载
+
+  - id: led-3528-rgb
+    name: 3528 RGB 雾状共阳
+    aliases:
+      - 3528RGB
+      - 3528 雾状共阳
+      - 3528 RGB 四脚
+    kind: pcb
+    category: led
+    path: pcb/led-3528-rgb
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 数量待录
+    status: 现有
+    package: 3528
+    pending:
+      - qty
+    summary: 3528 雾状共阳 RGB 四脚；pin2=COM+。数量待录
+
+  - id: header-1x40
+    name: 1×40P 直插单排针
+    aliases:
+      - 1×40P直插单排针
+    kind: connector
+    category: header
+    path: connectors/header-1x40
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    package: 2.54mm
+    summary: 1×40P 直插单排针，10 条
+
+  - id: header-2x5
+    name: 2×5P 直插双排针
+    aliases:
+      - 2×5P直插双排针
+    kind: connector
+    category: header
+    path: connectors/header-2x5
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 2.54mm
+    summary: 2×5P 直插双排针，20 条
+
+  - id: header-2x6
+    name: 2×6P 直插双排针
+    aliases:
+      - 2×6P直插双排针
+    kind: connector
+    category: header
+    path: connectors/header-2x6
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 2.54mm
+    summary: 2×6P 直插双排针，20 条
+
+  - id: socket-1x4
+    name: 1×4P 直插单排母
+    aliases:
+      - 1×4P直插单排母
+    kind: connector
+    category: header
+    path: connectors/socket-1x4
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 2.54mm
+    summary: 1×4P 直插单排母，20 条
+
+  - id: socket-1x6
+    name: 1×6P 直插单排母
+    aliases:
+      - 1×6P直插单排母
+    kind: connector
+    category: header
+    path: connectors/socket-1x6
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 2.54mm
+    summary: 1×6P 直插单排母，20 条
+
+  - id: socket-1x7
+    name: 1×7P 直插单排母
+    aliases:
+      - 1×7P直插单排母
+    kind: connector
+    category: header
+    path: connectors/socket-1x7
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 2.54mm
+    summary: 1×7P 直插单排母，20 条
+
+  - id: socket-1x8
+    name: 1×8P 直插单排母
+    aliases:
+      - 1×8P直插单排母
+    kind: connector
+    category: header
+    path: connectors/socket-1x8
+    card: item.yaml
+    entry: INDEX.md
+    qty: 20
+    status: 现有
+    package: 2.54mm
+    summary: 1×8P 直插单排母，20 条
+
+  - id: socket-1x10
+    name: 1×10P 直插单排母
+    aliases:
+      - 1×10P直插单排母
+    kind: connector
+    category: header
+    path: connectors/socket-1x10
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    package: 2.54mm
+    summary: 1×10P 直插单排母，10 条
+
+  - id: socket-1x20
+    name: 1×20P 直插单排母
+    aliases:
+      - 1×20P直插单排母
+    kind: connector
+    category: header
+    path: connectors/socket-1x20
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    package: 2.54mm
+    summary: 1×20P 直插单排母，10 条
+
+  - id: header-2xn-female
+    name: 2×N 双排排母
+    aliases:
+      - 双排排母
+      - 2xN 排母
+    kind: connector
+    category: header
+    path: connectors/header-2xn-female
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 已补货，数量待录
+    status: 已购
+    package: 2.54mm
+    pending:
+      - qty
+    summary: 2×N 双排排母，2026-08-21 确认已补货，数量未录
+
+  - id: jumper-254
+    name: 2.54 mm 跳线帽
+    aliases:
+      - 跳线帽
+      - jumper
+    kind: connector
+    category: header
+    path: connectors/jumper-254
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    package: 2.54mm
+    summary: 2.54 mm 开口黑色跳线帽 100
+
+  - id: xh254
+    name: XH2.54 接插件
+    aliases:
+      - XH2.54
+      - JST XH
+      - XH
+    kind: connector
+    category: wire-to-board
+    path: connectors/xh254
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 见 variants
+    status: 现有
+    package: XH2.54
+    pending:
+      - footprint
+      - qty
+    summary: 2.54 mm XH 系列 2–8P；7P 已补货数量待录。针距须按商家图确认
+
+  - id: ph20
+    name: PH2.0 接插件
+    aliases:
+      - PH2.0
+      - JST PH
+      - PH
+    kind: connector
+    category: wire-to-board
+    path: connectors/ph20
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 见 variants
+    status: 现有
+    package: PH2.0
+    pending:
+      - footprint
+    summary: 2.0 mm PH 系列 2/3/4P，上 PCB 前确认真实系列尺寸
+
+  - id: xa25
+    name: XA2.5 接插件
+    aliases:
+      - XA2.5
+      - XA
+    kind: connector
+    category: wire-to-board
+    path: connectors/xa25
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 见 variants
+    status: 现有
+    package: XA2.5
+    pending:
+      - footprint
+    summary: 2.5 mm XA，比 XH 更牢固；2P/4P
+
+  - id: kf128-2p
+    name: KF128-2P 螺钉端子
+    aliases:
+      - KF128-2P
+      - KF128
+    kind: connector
+    category: terminal-block
+    path: connectors/kf128-2p
+    card: item.yaml
+    entry: INDEX.md
+    qty: 5
+    status: 现有
+    package: KF128-2P
+    pending:
+      - footprint
+    summary: 螺钉 PCB 端子，商品标 5.0 mm，5 只。不要按 5.08 mm 库件画
+
+  - id: fuse-holder-5x20
+    name: 5×20 mm PCB 保险丝座
+    aliases:
+      - 5x20 保险丝座
+      - fuse holder
+    kind: connector
+    category: fuse-holder
+    path: connectors/fuse-holder-5x20
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    package: 5x20-pcb
+    pending:
+      - footprint
+    summary: PCB 焊板式 5×20 保险丝座 10 只；脚距未核
+
+  - id: usb-a-male-smd
+    name: USB-A 贴片焊板公头
+    aliases:
+      - USB-A PCB公头
+      - USB焊板公头
+      - 贴片USB公头
+    kind: connector
+    category: usb
+    path: connectors/usb-a-male-smd
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 商品页 10 个装，数量待录
+    status: 现有
+    package: USB-A-male-SMD
+    pending:
+      - qty
+    summary: USB-A 贴片焊板公头，壳体约 12.8×18.8。数量待录
+
+  - id: usb-c-16p
+    name: USB-C 16P 插板母座
+    aliases:
+      - USB-C 16P母座
+      - Type-C母座 16P
+      - Type-C母座_16P_4脚插板_黑色
+      - "671124"
+    kind: connector
+    category: usb
+    path: connectors/usb-c-16p
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 数量待录
+    status: 现有
+    package: USB-C-16P-midmount
+    pending:
+      - footprint
+      - qty
+    summary: USB-C 16P 黑色插板母座，5 V / 3 A。无尺寸图，封装不可定稿
+
+  - id: xt30u-m
+    name: XT30U-M 公头（线端）
+    aliases:
+      - XT30UM
+      - XT30U-M
+    kind: connector
+    category: xt
+    path: connectors/xt30u-m
+    card: item.yaml
+    entry: INDEX.md
+    qty: 5
+    status: 现有
+    package: XT30-male-wire
+    summary: XT30U-M 公头（线端） ×5，线束用
+
+  - id: xt30u-f
+    name: XT30U-F 母头（线端）
+    aliases:
+      - XT30UF
+      - XT30U-F
+    kind: connector
+    category: xt
+    path: connectors/xt30u-f
+    card: item.yaml
+    entry: INDEX.md
+    qty: 5
+    status: 现有
+    package: XT30-female-wire
+    summary: XT30U-F 母头（线端） ×5，线束用
+
+  - id: xt30upb-m
+    name: XT30UPB-M 公头（PCB 焊板）
+    aliases:
+      - XT30UPBM
+      - XT30UPB-M
+    kind: connector
+    category: xt
+    path: connectors/xt30upb-m
+    card: item.yaml
+    entry: INDEX.md
+    qty: 5
+    status: 现有
+    package: XT30-male-pcb
+    lcsc: C428721
+    summary: XT30UPB-M 公头（PCB 焊板） ×5，可上 PCB
+
+  - id: xt30pw-m
+    name: XT30PW-M 公头（弯脚）
+    aliases:
+      - XT30PWM
+      - XT30PW-M
+    kind: connector
+    category: xt
+    path: connectors/xt30pw-m
+    card: item.yaml
+    entry: INDEX.md
+    qty: 5
+    status: 现有
+    package: XT30-male-right-angle
+    summary: XT30PW-M 公头（弯脚） ×5，可上 PCB
+
+  - id: xt60pt-m
+    name: XT60PT-M 公头（卧式带护套）
+    aliases:
+      - XT60PTM
+      - XT60PT-M
+    kind: connector
+    category: xt
+    path: connectors/xt60pt-m
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    package: XT60-male-wire-sheath
+    summary: XT60PT-M 公头（卧式带护套） ×1，线束用
+
+  - id: xt60pm-m
+    name: XT60PM-M 公头（PCB 骑板）
+    aliases:
+      - XT60PMM
+      - XT60PM-M
+    kind: connector
+    category: xt
+    path: connectors/xt60pm-m
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    package: XT60-male-pcb
+    summary: XT60PM-M 公头（PCB 骑板） ×1，可上 PCB
+
+  - id: wire-ul1007-26awg
+    name: UL1007 26 AWG 镀锡铜电子线
+    aliases:
+      - UL1007 26AWG
+      - 26 AWG
+    kind: wiring
+    category: wire
+    path: wiring/wire-ul1007-26awg
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    summary: 26 AWG 7/0.16TS，红/黑各 10 m，自由空气约 2 A
+
+  - id: wire-ul1007-22awg
+    name: UL1007 22 AWG 镀锡铜电子线
+    aliases:
+      - UL1007 22AWG
+      - 22 AWG
+    kind: wiring
+    category: wire
+    path: wiring/wire-ul1007-22awg
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    summary: 22 AWG 17/0.16TS，红/黑各 10 m，自由空气约 5 A
+
+  - id: wire-3239-18awg
+    name: 3239 18 AWG 镀锡铜硅胶高温线
+    aliases:
+      - 3239
+      - 18 AWG 硅胶线
+    kind: wiring
+    category: wire
+    path: wiring/wire-3239-18awg
+    card: item.yaml
+    entry: INDEX.md
+    qty: 10
+    status: 现有
+    summary: 18 AWG 硅胶线，红/黑各 10 m，自由空气约 16 A
+
+  - id: wire-24awg
+    name: 24 AWG 镀锡铜电子线（盒装）
+    aliases:
+      - 24 AWG
+    kind: wiring
+    category: wire
+    path: wiring/wire-24awg
+    card: item.yaml
+    entry: INDEX.md
+    qty: 100
+    status: 现有
+    summary: 24 AWG 盒装 100 m，自由空气约 3.5 A
+
+  - id: cable-dc55-xt60
+    name: DC5.5 弯公 → XT60 母 20 cm
+    aliases:
+      - DC55-XT60
+    kind: wiring
+    category: cable
+    path: wiring/cable-dc55-xt60
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    summary: DC5.5 弯公转 XT60 母，20 cm，1 根
+
+  - id: cable-dc55-xt30
+    name: DC5.5 弯公 → XT30 母 20 cm
+    aliases:
+      - DC55-XT30
+    kind: wiring
+    category: cable
+    path: wiring/cable-dc55-xt30
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    summary: DC5.5 弯公转 XT30 母，20 cm，1 根
+
+  - id: cable-dc55-xh2
+    name: DC5.5 弯公 → XH2.54-2P 20 cm
+    aliases:
+      - DC55-XH2
+    kind: wiring
+    category: cable
+    path: wiring/cable-dc55-xh2
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    summary: DC5.5 弯公转 XH2.54-2P，20 cm，1 根
+
+  - id: cable-dc55-dc55
+    name: DC5.5 弯公 → DC5.5 弯公 25 cm
+    aliases:
+      - DC55-DC55
+    kind: wiring
+    category: cable
+    path: wiring/cable-dc55-dc55
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    summary: DC5.5 弯公对弯公，25 cm，1 根
+
+  - id: heatshrink
+    name: 彩色加厚热缩管
+    aliases:
+      - 热缩管
+    kind: wiring
+    category: harness
+    path: wiring/heatshrink
+    card: item.yaml
+    entry: INDEX.md
+    qty: 2
+    status: 现有
+    pending:
+      - qty
+    summary: 164 根/袋 ×2 袋；另有活动赠品待确认
+
+  - id: braid-pet
+    name: PET 尼龙编织网管
+    aliases:
+      - 编织网管
+    kind: wiring
+    category: harness
+    path: wiring/braid-pet
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 见 variants
+    status: 现有
+    summary: 扁宽 3 / 6 / 10 mm 各 10 m
+
+  - id: ferrule-ve
+    name: VE 管型冷压端子
+    aliases:
+      - VE端子
+      - 管型端子
+    kind: wiring
+    category: harness
+    path: wiring/ferrule-ve
+    card: item.yaml
+    entry: INDEX.md
+    qty: 800
+    status: 现有
+    summary: VE 管型冷压端子混合套装 800 只；配 HSC8 10S 压接
+
+  - id: stm32f407-skystar
+    name: 立创·天空星 STM32F407VET6（青春版）
+    aliases:
+      - 天空星
+      - 梁山派
+      - STM32F407VET6
+      - 青春版
+    kind: module
+    category: module
+    path: modules/stm32f407-skystar
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    devices_id: stm32f407-skystar
+    summary: 1 块；板 45.0×69.9 mm；P1/P2 间距 35.56 mm
+
+  - id: esp32-c3-supermini
+    name: ESP32-C3 SuperMini
+    aliases:
+      - ESP32-C3 SuperMini
+      - C3 supermini
+    kind: module
+    category: module
+    path: modules/esp32-c3-supermini
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    devices_id: esp32-c3-supermini
+    summary: 1 块；18.00×22.50 mm；原生 USB 无 CH340
+
+  - id: esp32-c6-supermini
+    name: ESP32-C6 SuperMini
+    aliases:
+      - ESP32-C6 SuperMini
+      - ESP32-C6FH4
+      - C6 supermini
+    kind: module
+    category: module
+    path: modules/esp32-c6-supermini
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-在途
+    devices_id: esp32-c6-supermini
+    summary: 1 块在途；26.04×18.00 mm；与 C3 从 USB 端对齐第 1 针都是 5V
+
+  - id: p03b
+    name: 轮趣 P03B 5 V / 3.3 V 稳压模块
+    aliases:
+      - P03B
+      - 轮趣P03B
+    kind: module
+    category: module
+    path: modules/p03b
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购
+    devices_id: p03b
+    pending:
+      - hole-pitch-verify
+    summary: 1 块；7–30 V 入，5 V / 3.3 V 出
+
+  - id: sku-17423
+    name: "5 A 双通道可调 BUCK（SKU:17423）"
+    aliases:
+      - "SKU:17423"
+      - SKU17423
+      - 晒邦
+    kind: module
+    category: module
+    path: modules/sku-17423
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-在途
+    devices_id: sku-17423
+    summary: 1 块在途；板外使用
+
+  - id: p23c
+    name: P23C 足A 5V5A 电源板（支持 PD）
+    aliases:
+      - P23C
+    kind: module
+    category: module
+    path: modules/p23c
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: —
+    status: 现有
+    summary: 12 V→5 V 大电流，板外走线束；与 YB-MPP01 二选一
+
+  - id: yb-mpp01
+    name: YAHBOOM YB-MPP01-V1.0
+    aliases:
+      - YB-MPP01
+      - YB-MPP01-V1.0
+    kind: module
+    category: module
+    path: modules/yb-mpp01
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: —
+    status: 现有
+    devices_id: yb-mpp01
+    summary: 12 V→5 V 视觉主控供电；6P 排针是 5 V 输出禁止反灌
+
+  - id: lipo-523450-1000
+    name: 523450 1000 mAh 锂聚合物（带保护板）
+    aliases:
+      - "523450"
+      - "503450"
+      - DIMY 523450
+      - 523450 1000毫安
+    kind: module
+    category: battery
+    path: modules/lipo-523450-1000
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: 数量待录
+    status: 现有
+    package: pouch-523450
+    pending:
+      - qty
+      - connector
+    summary: 1S 3.7 V / 1000 mAh 软包，约 52×34×5 mm，带 BW-1835。数量与插头待核
+
+  - id: tb6612-d153c
+    name: D153C（TB6612FNG 双路稳压版）
+    aliases:
+      - D153C
+      - TB6612FNG
+      - TB6612
+    kind: module
+    category: module
+    path: modules/tb6612-d153c
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购
+    devices_id: tb6612-d153c
+    summary: 1 块；离板走线束，针序已对照实物
+
+  - id: icm45686
+    name: ICM-45686 六轴 IMU 模块
+    aliases:
+      - ICM-45686
+      - ICM45686
+    kind: module
+    category: module
+    path: modules/icm45686
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-在途
+    devices_id: icm45686
+    summary: 1 块在途；15×18 mm，不焊排针
+
+  - id: mmc5983ma
+    name: MMC5983MA 三轴磁传感器模块
+    aliases:
+      - MMC5983MA
+      - 美新
+    kind: module
+    category: module
+    path: modules/mmc5983ma
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-在途
+    devices_id: mmc5983ma
+    summary: 1 块在途；15×10 mm 四针 VIN/GND/SDA/SCL
+
+  - id: ssd1306-096
+    name: 0.96″ OLED（SSD1306 128×64 I²C）
+    aliases:
+      - SSD1306
+      - 0.96 OLED
+      - 0.96寸OLED
+    kind: module
+    category: module
+    path: modules/ssd1306-096
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: —
+    status: 现有
+    devices_id: ssd1306-096
+    summary: 数量未录；四针丝印 GND/VCC/SCL/SDA；孔内径 2 mm 不是 M3
+
+  - id: sg90-180
+    name: SG90 9g 180° 舵机
+    aliases:
+      - SG90
+      - SG90 180
+    kind: mechanical
+    category: servo
+    path: mechanical/sg90-180
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: ≥1
+    status: 已购
+    summary: 5 V 三线角度型舵机，本体不上板
+
+  - id: sg90-360
+    name: SG90 9g 360° 连续旋转舵机
+    aliases:
+      - SG90 360
+    kind: mechanical
+    category: servo
+    path: mechanical/sg90-360
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: ≥1
+    status: 已购
+    summary: 5 V 三线连续旋转舵机，本体不上板
+
+  - id: mg513-gmr
+    name: MG513P30_12V（GMR 编码器）电机套件
+    aliases:
+      - MG513
+      - MG513P30_12V
+      - 轮趣MG513
+    kind: mechanical
+    category: motor
+    path: mechanical/mg513-gmr
+    card: item.yaml
+    entry: INDEX.md
+    qty: 2
+    status: 已购-待取
+    devices_id: mg513-gmr
+    summary: "2 套待取；12 V 1:30；含 37 加厚支架、6 mm 六角联轴器、65 mm 轮"
+
+  - id: wheel-85mm
+    name: 天然橡胶实心轮 85 mm
+    aliases:
+      - 85mm 轮
+    kind: mechanical
+    category: wheel
+    path: mechanical/wheel-85mm
+    card: item.yaml
+    entry: INDEX.md
+    qty: 2
+    status: 已购
+    summary: 直径 85 mm，配 6 mm 孔径抱紧式六角联轴器，2 只
+
+  - id: coupling-od31-6
+    name: 铝合金法兰联轴器 OD31 / 6 mm
+    aliases:
+      - 法兰联轴器 31mm
+    kind: mechanical
+    category: coupling
+    path: mechanical/coupling-od31-6
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: —
+    status: 现有
+    summary: 外径 31 mm，柱孔 6 mm
+
+  - id: coupling-od22-3
+    name: 铝合金法兰联轴器 OD22 / 3 mm
+    aliases:
+      - 法兰联轴器 22mm
+    kind: mechanical
+    category: coupling
+    path: mechanical/coupling-od22-3
+    card: item.yaml
+    entry: INDEX.md
+    qty: null
+    qty_label: —
+    status: 现有
+    summary: 外径 22 mm，柱孔 3 mm
+
+  - id: daplink
+    name: DAPLink 仿真器
+    aliases:
+      - DAPLink
+    kind: tool
+    category: debug
+    path: tools/daplink
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-在途
+    pending:
+      - firmware-protocol
+    summary: 1 套在途；配 4P 杜邦线、Type-C 数据线；STM32/ARM SWD
+
+  - id: ch340c
+    name: CH340C USB 转 TTL
+    aliases:
+      - CH340C
+      - CH340
+    kind: tool
+    category: debug
+    path: tools/ch340c
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-待取
+    pending:
+      - pinout-level
+    summary: 1 块待取；UART 调试/烧录
+
+  - id: hsc8-10s
+    name: HSC8 10S 管型端子压线钳
+    aliases:
+      - HSC8 10S
+      - HSC8
+    kind: tool
+    category: crimp
+    path: tools/hsc8-10s
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-待取
+    summary: 0.08–10 mm² 四边形压接，1 把待取
+
+  - id: sn-2549
+    name: SN-2549 小型端子压接钳
+    aliases:
+      - SN-2549
+    kind: tool
+    category: crimp
+    path: tools/sn-2549
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购-待取
+    summary: 压 XH2.54 / PH2.0 等小型端子，1 把待取
+
+  - id: pin-extractor-38
+    name: 退针器/推针器 38 件套
+    aliases:
+      - 退针器
+      - 推针器
+    kind: tool
+    category: crimp
+    path: tools/pin-extractor-38
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购
+    summary: 38 件套，1 套
+
+  - id: diy-car-toolkit
+    name: 多功能 DIY 小车工具套装
+    aliases:
+      - DIY工具套装
+    kind: tool
+    category: assembly
+    path: tools/diy-car-toolkit
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 已购
+    summary: 螺丝刀、套筒、内六角等，1 套
+
+  - id: letsketch-labeler
+    name: LETSKETCH 蓝牙热敏标签打印机
+    aliases:
+      - LETSKETCH
+      - 标签打印机
+    kind: tool
+    category: label
+    path: tools/letsketch-labeler
+    card: item.yaml
+    entry: INDEX.md
+    qty: 1
+    status: 现有
+    summary: 使用 30×12 mm 标签纸，1 台

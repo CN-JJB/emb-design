@@ -1,0 +1,43 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: ph20
+name: PH2.0 接插件
+aliases:
+  - PH2.0
+  - JST PH
+  - PH
+kind: connector
+category: wire-to-board
+package: PH2.0
+qty: null
+qty_label: 见 variants
+status: 现有
+specs:
+  pitch_mm: 2.0
+  family: PH
+variants:
+  - id: ph20-2p
+    pins: 2
+    straight_sets: 50
+    right_angle_sets: 50
+    standalone_header: 100
+  - id: ph20-3p
+    pins: 3
+    straight_sets: 50
+    right_angle_sets: 50
+    standalone_header: 100
+  - id: ph20-4p
+    pins: 4
+    straight_sets: 20
+    right_angle_sets: 20
+    standalone_header: 100
+pending:
+  - footprint
+warnings:
+  - 上 PCB 前需按实际系列尺寸确认封装。
+notes:
+  - 有 SN-2549 可自制线束。
+summary: 2.0 mm PH 系列 2/3/4P，上 PCB 前确认真实系列尺寸

@@ -1,0 +1,20 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: jumper-254
+name: 2.54 mm 跳线帽
+aliases:
+  - 跳线帽
+  - jumper
+kind: connector
+category: header
+package: 2.54mm
+qty: 100
+status: 现有
+specs:
+  pitch_mm: 2.54
+  form: jumper-open
+  color: black
+summary: 2.54 mm 开口黑色跳线帽 100

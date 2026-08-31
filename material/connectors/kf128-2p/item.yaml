@@ -1,0 +1,24 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: kf128-2p
+name: KF128-2P 螺钉端子
+aliases:
+  - KF128-2P
+  - KF128
+kind: connector
+category: terminal-block
+package: KF128-2P
+qty: 5
+status: 现有
+specs:
+  type: screw-terminal
+  pins: 2
+  pitch_claim_mm: 5.0
+pending:
+  - footprint
+warnings:
+  - 订单写 5.0 mm，不能直接套 5.08 mm 库件。需商家底面尺寸图。
+summary: 螺钉 PCB 端子，商品标 5.0 mm，5 只。不要按 5.08 mm 库件画

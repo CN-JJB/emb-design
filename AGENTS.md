@@ -26,6 +26,27 @@
 - 记录 KiCad symbol / footprint / 3D model 状态；
 - 若用户已购，同时更新 `material/catalog.yaml` 与对应 `item.yaml`。
 
+## Web AI ↔ 本地 AI / CLI 协作
+
+当当前环境无法完成某项仓库操作时，不把任务停在“无法处理”。优先判断本地 Git/CLI 是否可以完成。
+
+典型需要交给本地 AI/CLI 的内容：
+- 私有源仓库中的 PDF、PNG/JPG/WebP、ZIP、STEP/STP/STL、XLSX、BIN 等二进制跨仓库迁移；
+- 需要本地 KiCad / FreeCAD / Python / shell 才能完成的格式转换、几何检查或批处理；
+- 大批量 Git 文件移动、重命名、去重、LFS 处理；
+- 当前连接器无法直接执行但本地 `git clone / pull / add / commit / push` 可以执行的操作。
+
+遇到这类任务时：
+1. Web AI 先完成能完成的分析、目标路径设计、来源核对和索引规划；
+2. Web AI 输出一份**可直接交给本地 AI 执行的完整 Prompt**，不要只给零散命令；
+3. Prompt 必须包含：源仓库/目标仓库、源路径/目标路径、需要复制的明确文件、不能改动的内容、校验要求、索引更新要求、commit message 建议；
+4. 本地 AI 应先 `git pull --ff-only`，避免覆盖 Web AI 已提交的更新；
+5. 本地 AI 完成后必须运行校验，再 commit + push；
+6. 本地 AI 返回：修改文件清单、校验结果、commit SHA、是否存在未解决问题；
+7. 用户把结果或 commit SHA 告诉 Web AI 后，Web AI 再复核 GitHub，并把 `source-only` / `missing` 等状态更新为真实状态。
+
+标准交接模板见 `docs/local-ai-handoff.md`。
+
 ## 来源优先级
 
 厂家 datasheet / 官方机械图 > KiCad 官方库 > 已核验第三方库 > 实测/用户提供资料 > 未核验社区资源。

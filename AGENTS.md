@@ -1,67 +1,51 @@
-# emb-design 检索与维护规则
+# emb-design AI 规则
 
-本仓库用于嵌入式硬件方案阶段的器件、物料与 KiCad 资源检索。
+本仓库的顶层治理规则位于 `docs/governance/`。任何方案检索、资料新增、历史整理、KiCad 资产维护，先遵守：
 
-## 方案讨论时的检索顺序
+1. `docs/governance/repository-architecture.md`
+2. `docs/governance/verification-policy.md`
+3. `docs/governance/maintenance-workflow.md`
+4. 各域 README 与实体 YAML
 
-1. 先查 `devices/catalog.yaml`：按型号、aliases、roles、interfaces 找候选器件。
-2. 再读候选器件目录下的 `device.yaml` 与 `INDEX.md` / `docs/`，确认电压、接口、引脚、尺寸、使用限制与来源。
-3. 查 `material/catalog.yaml`：确认用户现有/已购/在途物料，优先复用已有材料。
-4. 查具体 `material/**/item.yaml`：确认数量、封装、连接器系列、待核参数等。
-5. 查 `index/kicad-assets.yaml` 与 `kicad/libraries/`：
-   - KiCad 官方通用 symbol/footprint：按 KiCad 10.0 官方库验证，不在本仓库重复镜像完整 public 库；
-   - 单文件引入与自建资源：优先使用 `kicad/libraries/private/`；
-   - 整套第三方库：放 `kicad/libraries/thirdparty/`；
-   - 3D 模型若状态为 `source-only`，表示模型仍在旧仓库，需要后续二进制迁移。
-6. 输出方案时必须明确给出：器件型号、连接关系、symbol、footprint、3D model 的状态与来源。
-7. 不得因为“封装名看起来像”就认定可用。封装必须与 datasheet / 实测机械尺寸核对。
-8. 缺失资源明确写 `missing` / `verify` / `custom-needed`，不要猜测补齐。
+## 设计检索顺序
 
-## 新增器件
+1. 查 `devices/catalog.yaml` 与 `material/catalog.yaml`，确定具体 id / variant。
+2. 读对应 `device.yaml` / `item.yaml`，不要从文件夹名或图片自行猜规格。
+3. 检查 warnings / pending / quality。
+4. 对影响电压、针序、机械、封装的关键事实，读取对应原始证据。
+5. 查 KiCad 资产登记与实际 private/thirdparty 文件。
+6. 输出方案时明确：
+   - 器件/物料 id；
+   - 当前库存状态；
+   - 关键连接；
+   - symbol；
+   - footprint；
+   - 3D；
+   - 来源/验证状态；
+   - 未决项。
 
-新增器件时优先：
-- 更新 `devices/catalog.yaml`；
-- 新建或更新 `devices/<device>/device.yaml`；
-- 保存 datasheet / 引脚 / 机械资料的来源信息；
-- 记录 KiCad symbol / footprint / 3D model 状态；
-- 若用户已购，同时更新 `material/catalog.yaml` 与对应 `item.yaml`。
+## 硬规则
 
-## Web AI ↔ 本地 AI / CLI 协作
+- `material/_inbox/`、未来任何 quarantine 区不得作为设计依据。
+- “KiCad 官方”只表示来源，不表示 footprint 自动匹配手上实物。
+- 私人库“已经存在”只表示有候选，最终仍需 mechanical/pinout 证据。
+- 关键来源发生冲突时必须显式标 conflict/verify，不静默选一个。
+- 不根据同名商品、相似模块、宣传图猜 pinout/footprint。
+- 库存存在不能覆盖技术不适配。
+- Git history 是历史保存手段；工作树不保留无意义重复/过时/无关资料。
 
-当当前环境无法完成某项仓库操作时，不把任务停在“无法处理”。优先判断本地 Git/CLI 是否可以完成。
+## 历史资料整改
 
-典型需要交给本地 AI/CLI 的内容：
-- 私有源仓库中的 PDF、PNG/JPG/WebP、ZIP、STEP/STP/STL、XLSX、BIN 等二进制跨仓库迁移；
-- 需要本地 KiCad / FreeCAD / Python / shell 才能完成的格式转换、几何检查或批处理；
-- 大批量 Git 文件移动、重命名、去重、LFS 处理；
-- 当前连接器无法直接执行但本地 `git clone / pull / add / commit / push` 可以执行的操作。
+先完成治理设计，再逐 id 整理。每个 id 先做文件动作表：KEEP / MOVE / REHOME / QUARANTINE / DELETE，然后更新 YAML、证据、INDEX、关联、KiCad，最后验证。
 
-遇到这类任务时：
-1. Web AI 先完成能完成的分析、目标路径设计、来源核对和索引规划；
-2. Web AI 输出一份**可直接交给本地 AI 执行的完整 Prompt**，不要只给零散命令；
-3. Prompt 必须包含：源仓库/目标仓库、源路径/目标路径、需要复制的明确文件、不能改动的内容、校验要求、索引更新要求、commit message 建议；
-4. 本地 AI 应先 `git pull --ff-only`，避免覆盖 Web AI 已提交的更新；
-5. 本地 AI 完成后必须运行校验，再 commit + push；
-6. 本地 AI 返回：修改文件清单、校验结果、commit SHA、是否存在未解决问题；
-7. 用户把结果或 commit SHA 告诉 Web AI 后，Web AI 再复核 GitHub，并把 `source-only` / `missing` 等状态更新为真实状态。
+不要在没有逐文件审计前进行全库批量移动或批量重命名。
 
-标准交接模板见 `docs/local-ai-handoff.md`。
+## 新增资料
 
-## 来源优先级
+新增流程见 `docs/governance/maintenance-workflow.md`。身份未知先隔离；身份明确后再入正式 catalog。
 
-厂家 datasheet / 官方机械图 > KiCad 官方库 > 已核验第三方库 > 实测/用户提供资料 > 未核验社区资源。
+## Web AI ↔ 本地 AI / CLI
 
-任何自建或修改 footprint / 3D model 都要记录来源和复核结论。
+当 Web AI 无法完成二进制、本地 KiCad/FreeCAD 或大批量 Git 操作时，按 `docs/local-ai-handoff.md` 生成完整执行 Prompt。
 
-
-## 已有资料规范化
-
-迁移完成不等于整理完成。对历史资料必须逐器件、逐物料做内容审计：
-
-1. 先确认资料归属：`devices`（模块怎么用）、`material`（手上有什么/分立件规格）、`kicad`（EDA 资产）。
-2. 再按内容归档：照片→images，机械图/STEP→mechanical/model，原理图→electrical，芯片手册→references/chip 或 datasheets，驱动/例程→software。
-3. 商家宣传图只能作为识别/来源参考，放 vendor reference，并明确“非规格权威”；不得与实物照片混在 images 里。
-4. 混合包、其它器件例程、通用安装器、重复/过时资料不得留在具体器件目录里。
-5. `material/_inbox/` 是隔离区：未确认型号的原始资料可以暂存，但 AI 选型与 PCB 封装决策不得引用它。
-6. 每次整理必须同步检查 `device.yaml/item.yaml` 的 `files:`、`INDEX.md`、catalog 和 KiCad 索引引用。
-7. 规范化进度记录在 `docs/normalization-audit.md`。只有标为 `normalized` 的条目才表示目录结构与索引已完成一次人工/AI 内容审计。
+本地 AI 负责执行既定 manifest，不自行决定仓库结构。push 后 Web AI 复核 commit。

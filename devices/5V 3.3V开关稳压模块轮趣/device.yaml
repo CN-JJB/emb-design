@@ -1,0 +1,72 @@
+# 结构化卡片。查询电压、针序、尺寸时读本文件；
+# 接线方位与安装步骤读 INDEX.md / docs/hardware.md。
+# 未写的字段表示尚未确认，禁止按同名电源模块推测。
+
+id: p03b
+name: 轮趣 P03B 5 V / 3.3 V 稳压模块
+aliases:
+  - P03B
+  - 轮趣P03B
+  - 5V 3.3V开关稳压模块轮趣
+category: power
+roles: [buck, dual-rail]
+chip: null
+module_vendor: 轮趣
+
+interfaces: [header-2.54]
+voltage:
+  vin: [7, 30]
+  vout_5v: 5.0
+  vout_3v3: 3.3
+  iout_5v_claim: [3, 5]     # 图片标称，无连续/峰值条件
+  iout_3v3_a: 0.5
+  reverse_protection: false
+
+pins:
+  pitch_mm: 2.54
+  headers_soldered: false
+  input:
+    location: right
+    orientation: vertical
+    count: 6
+    order_top_to_bottom: [IN+, IN+, IN+, IN-, IN-, IN-]
+  out_5v:
+    location: left
+    orientation: vertical
+    count: 4
+    order_top_to_bottom: [5V, 5V, GND, GND]
+  out_3v3:
+    location: bottom
+    designator: J6
+    orientation: horizontal
+    count: 4
+    order_left_to_right: [GND, GND, 3V3, 3V3]
+
+mechanical:
+  pcb_mm: [47.000, 18.034]
+  mounting_holes: 4
+  hole_pitch_mm: [33.020, 12.065]   # 本目录这一张尺寸图；另有宣传图约 11.9 mm，未收入
+  hole_diameter_mm: 3.1             # README 记录，尺寸图未标注
+  j6_pin1_from_left_edge_mm: 11.5   # 记为实物与图纸校准
+  source: merchant-drawing
+  measured: false
+  weight_g: 6
+  layers_claim: 4
+
+not_this_device:
+  - P23C
+  - YB-MPP01
+  - 双路可调BUCK
+
+warnings:
+  - 输入无反接保护，IN+ / IN- 接反会损坏模块。
+  - 5 V 排针纵向、3.3 V 排针横向，不要对调。
+  - 3.3 V 不超过 0.5 A；5 V 标称 3–5 A 无连续条件，须降额并做温升。
+  - 本目录只有孔距 12.065 mm 的一张尺寸图；与另一张约 11.9 mm 的差异未消除，投板前实测。
+  - 大电流优先焊线，不要只靠普通排针。
+
+files:
+  entry: INDEX.md
+  hardware: docs/hardware.md
+  photo: images/p03b-pinout.png
+  mechanical: mechanical/p03b-mechanical-dimensions.png

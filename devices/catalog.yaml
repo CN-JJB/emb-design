@@ -1,0 +1,163 @@
+# 器件库总目录。AI 检索：先读本文件，按 id / aliases / roles / interfaces 选出器件，
+# 再打开该器件的 device.yaml 与 entry；只有寄存器、时序、封装细节才去 PDF。
+# 未列入 devices: 的文件夹表示尚未整理，不要当作已编目。
+
+schema_version: 1
+updated: 2026-08-28
+
+devices:
+  - id: ssd1306-096
+    name: 0.96寸 OLED（SSD1306 128×64 I²C）
+    aliases: [SSD1306, 0.96 OLED, 0.96寸OLED, YX70836, QG-2864KLBEG01]
+    category: display
+    roles: [oled]
+    chip: SSD1306
+    interfaces: [i2c]
+    path: 0.96寸OLED
+    card: device.yaml
+    entry: INDEX.md
+    summary: 四针 I²C，针序 GND/VCC/SCL/SDA，默认 7 位地址 0x3C
+
+  - id: p03b
+    name: 轮趣 P03B 5 V / 3.3 V 稳压模块
+    aliases: [P03B, 轮趣P03B, 5V 3.3V开关稳压模块轮趣]
+    category: power
+    roles: [buck, dual-rail]
+    chip: null
+    interfaces: [header-2.54]
+    path: 5V 3.3V开关稳压模块轮趣
+    card: device.yaml
+    entry: INDEX.md
+    summary: 7–30 V 入，5 V / 3.3 V 出；右 1×6 输入，左纵向 1×4 为 5 V，底横向 1×4 为 3.3 V
+
+  - id: sku-17423
+    name: 双通道可调 BUCK（SKU:17423）
+    aliases: [SKU:17423, SKU17423, 晒邦, 双路可调BUCK]
+    category: power
+    roles: [buck, dual-adjustable]
+    chip: null
+    interfaces: [screw-terminal]
+    path: DC-DC降压电源模块直流双路可调电压输出
+    card: device.yaml
+    entry: INDEX.md
+    summary: 5–32 V 入，两路 0.8–30 V 可调，单路峰值 5 A
+
+  - id: esp32-c3-supermini
+    name: ESP32-C3 Super Mini
+    aliases: [ESP32-C3 SuperMini, C3 supermini]
+    category: mcu
+    roles: [wifi-mcu]
+    chip: ESP32-C3
+    interfaces: [usb-c, header-2.54]
+    path: esp32-c3-supermini
+    card: device.yaml
+    entry: INDEX.md
+    summary: 18×22.5 mm；USB 朝上时 5V/G/3.3 在右；原生 USB 无 CH340
+
+  - id: esp32-c6-supermini
+    name: ESP32-C6 Super Mini
+    aliases: [ESP32-C6 SuperMini, ESP32-C6FH4, C6 supermini]
+    category: mcu
+    roles: [wifi-mcu]
+    chip: ESP32-C6FH4
+    interfaces: [usb-c, header-2.54]
+    path: esp32-c6-supermini
+    card: device.yaml
+    entry: INDEX.md
+    summary: 26×18 mm C6FH4；GPIO8 RGB、GPIO15 蓝灯；与 C3 从 USB 端对齐第 1 针都是 5V
+
+  - id: esp32-s3-wroom-1-n8r2
+    name: ESP32-S3-WROOM-1-N8R2
+    aliases: [ESP32-S3-WROOM-1-N8R2, WROOM-1 N8R2, ESP32-S3-WROOM-1]
+    category: mcu
+    roles: [wifi-mcu, rf-module]
+    chip: ESP32-S3
+    interfaces: [wifi, bluetooth-le, usb-fs, castellated]
+    path: ESP32-S3-WROOM-1-N8R2
+    card: device.yaml
+    entry: INDEX.md
+    summary: PCB 天线，8 MB Flash + 2 MB Quad PSRAM；18.0×25.5×3.1 mm；USB 在 GPIO19/20
+
+  - id: tb6612-d153c
+    name: D153C TB6612FNG 双路稳压电机驱动
+    aliases: [D153C, TB6612FNG, TB6612]
+    category: driver
+    roles: [motor-driver]
+    chip: TB6612FNG
+    interfaces: [header-2.54, XH-6P]
+    path: TB6612FNG双路直流电机驱动模块
+    card: device.yaml
+    entry: INDEX.md
+    summary: VM 4.5–15 V；编码器由 3V3 供电；针序已对照实物
+
+  - id: icm45686
+    name: ICM-45686 六轴 IMU 模块
+    aliases: [ICM-45686, ICM45686, 六轴IMU]
+    category: sensor
+    roles: [imu]
+    chip: ICM-45686
+    interfaces: [i2c, spi]
+    path: 六轴IMU ICM45686模块
+    card: device.yaml
+    entry: INDEX.md
+    summary: 15×18 mm；I²C 0x68/0x69；WHO_AM_I 0xE9；IO 按 3.3 V
+
+  - id: yb-mpp01
+    name: YAHBOOM YB-MPP01 稳压电源扩展板
+    aliases: [YB-MPP01, YB-MPP01-V1.0, 机器人稳压电源拓展板]
+    category: power
+    roles: [buck, sbc-supply]
+    chip: null
+    interfaces: [USB-C, PH2.0-2P, KF301-2P]
+    path: 机器人稳压电源拓展板
+    card: device.yaml
+    entry: INDEX.md
+    summary: 6–24 V 入 5 V 出；6P 排针是 5 V 输出禁止反灌
+
+  - id: stm32f407-skystar
+    name: 立创·天空星 STM32F407VET6 青春版
+    aliases: [天空星, 梁山派, STM32F407VET6, 青春版]
+    category: mcu
+    roles: [dev-board]
+    chip: STM32F407VET6
+    interfaces: [swd, usb-fs, header-2x20]
+    path: 立创·天空星STM32F407VET6开发板-青春版
+    card: device.yaml
+    entry: INDEX.md
+    summary: 45.0×69.9 mm；P1/P2 间距 35.56 mm；USB-C 无转串口芯片
+
+  - id: mmc5983ma
+    name: MMC5983MA 三轴磁传感器模块
+    aliases: [MMC5983MA, 美新]
+    category: sensor
+    roles: [magnetometer]
+    chip: MMC5983MA
+    interfaces: [i2c]
+    path: 美新 MMC5983MA模块 三轴磁传感器
+    card: device.yaml
+    entry: INDEX.md
+    summary: 15×10 mm 四针 VIN/GND/SDA/SCL；地址 0x30；先用 3.3 V
+
+  - id: inmp441
+    name: INMP441 I²S 全向麦克风模块（圆形 14 mm）
+    aliases: [INMP441, MK025336, telesky INMP441, INMP441麦克风模块, INMP441全向麦克风]
+    category: sensor
+    roles: [microphone, i2s-mic]
+    chip: INMP441
+    interfaces: [i2s, header-2.54]
+    path: INMP441全向麦克风
+    card: device.yaml
+    entry: INDEX.md
+    summary: 圆形 Ø14 mm，双 1×3，丝印 L/R WS SCK / SD VDD GND；VDD 先用 3.3 V，禁止 5 V
+
+  - id: mg513-gmr
+    name: MG513 GMR 编码器电机套件
+    aliases: [MG513, MG513P30_12V, 轮趣MG513]
+    category: mechanical
+    roles: [dc-motor, encoder]
+    chip: null
+    interfaces: [XH2.54-6P]
+    path: 轮趣MG513电机（GMR编码器）
+    card: device.yaml
+    entry: INDEX.md
+    summary: 12 V 1:30，堵转 3.2 A；6P 线序与 D153C 相反

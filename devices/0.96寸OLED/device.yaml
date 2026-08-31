@@ -1,0 +1,94 @@
+# 结构化卡片。查询电压、地址、针序、尺寸时读本文件；
+# 接线步骤、故障排查、资料审计读 INDEX.md 指向的 docs。
+# 未写的字段表示尚未确认，禁止按同名模块推测。
+
+id: ssd1306-096
+name: 0.96寸 OLED 模块
+aliases:
+  - SSD1306
+  - 0.96 OLED
+  - 0.96寸OLED
+  - YX70836
+  - QG-2864KLBEG01
+category: display
+roles: [oled]
+chip: SSD1306
+chip_vendor: Solomon Systech
+# 原理图与手册来自中景园资料包；商品图水印为优信电子。板厂未用实物丝印唯一确认。
+module_vendor: null
+schematic_origin: 中景园电子
+
+interfaces: [i2c]
+pins:
+  count: 4
+  pitch_mm: 2.54
+  order: [GND, VCC, SCL, SDA]
+  order_authority: silkscreen-and-schematic-J1
+  reset_brought_out: false
+
+i2c:
+  # 驱动 API 填 7 位地址。0x78/0x7A 是同一地址的 8 位写字节（7 位左移 1）。
+  address_7bit_default: "0x3C"   # SA0 / D/C# = 0
+  address_7bit_alt: "0x3D"       # 接到 VCC 后
+  address_8bit_write_default: "0x78"
+  address_8bit_write_alt: "0x7A"
+
+voltage:
+  vcc_merchant_claim: [3.0, 5.5]
+  first_bringup_v: 3.3
+  io_logic_v: 3.3
+  onboard_ldo: "662K"            # 原理图与商品背面照片均可见；仍建议先测 SCL/SDA 高电平
+
+display:
+  size_inch: 0.96
+  resolution: [128, 64]
+  color: variant
+  gddram_bytes: 1024
+  charge_pump: internal
+
+panel:
+  vendor: Allvision
+  part: QG-2864KLBEG01
+  alt_part: ZJY-2864KLBEG01
+  rev: C
+  glass_mm: [26.70, 19.26, 1.4]
+  active_area_mm: [21.744, 10.864]
+
+mechanical:
+  pcb_mm: [27.3, 27.8]
+  pcb_thickness_mm: 1.5
+  mounting_hole:
+    inner_mm: 2.0
+    outer_mm: 3.5
+    not: M3
+  source: merchant-drawing-B
+  measured: false
+  drawing_pin_labels: [VCC, GND, SCL, SDA]   # 图纸印错，接线不用这行
+
+not_this_device:
+  - SH1106
+  - CH1116
+  - SSD1309
+  - 128x32
+  - SPI-6pin
+  - SPI-7pin
+
+warnings:
+  - 程序填 7 位地址 0x3C，不要把商家写的 0x78 直接传给 Wire / ESP-IDF / STM32 驱动。
+  - Adafruit SSD1306 在地址参数为 0 时，128×64 会默认 0x3D；本模块必须显式传 0x3C。
+  - 四针 B 版结构图把排针印成 VCC GND SCL SDA；丝印和原理图是 GND VCC SCL SDA。接线只看丝印。
+  - 安装孔内径 2 mm，商品文案「M3 固定孔」与 27×27×2 mm 外形都不采用。
+  - 3.3 V MCU 首次调试时模块 VCC 也接 3.3 V。
+  - 画面偏移约 2 列时，驱动很可能按 SH1106 的 132 列编写；本模块按 SSD1306 128 列处理。
+  - 同外观六针/七针 SPI 模块不是本目录对象。
+
+files:
+  entry: INDEX.md
+  guide: docs/module-guide.md
+  audit: docs/source-audit-and-sources.md
+  photo: images/module-front-back-pinout.webp
+  mechanical_pdf: mechanical/pcb-4pin-B-27.3x27.8mm.pdf
+  schematic: electrical/module-i2c-4pin-schematic.pdf
+  datasheet: references/chip/SSD1306-Datasheet-Rev1.1.pdf
+  panel_spec: references/panel/Allvision-QG-2864KLBEG01-VerC.pdf
+  driver: software/Adafruit_SSD1306-d94f699.zip

@@ -1,0 +1,500 @@
+schema: 1
+generated: "2026-08-30"
+source_repository: "CN-JJB/embbed-projects"
+target_repository: "CN-JJB/emb-design"
+purpose: "Files that require local Git/CLI migration because the web GitHub connector cannot copy these binaries across repositories."
+
+summary:
+  devices:
+    files: 88
+    bytes: 148890336
+  material:
+    files: 24
+    bytes: 5926368
+  kicad_private_3d:
+    files: 6
+    bytes: 8794871
+
+exclude:
+  - "kicad/libraries/public/**  # KiCad 10.0 official mirror; intentionally not migrated"
+  - "kicad/projects/**          # project workspaces; not part of this knowledge-library migration"
+  - "kicad/tools/**             # workflow tooling; not part of this migration"
+  - "kicad/libraries/test/**    # test library; not needed"
+
+files:
+  devices:
+    - source: "devices/0.96寸OLED/electrical/module-i2c-4pin-schematic.pdf"
+      target: "devices/0.96寸OLED/electrical/module-i2c-4pin-schematic.pdf"
+      git_blob_sha: "1faf802f0583967a25743328dda225803f45b14f"
+      size: 73446
+    - source: "devices/0.96寸OLED/images/module-front-back-pinout.webp"
+      target: "devices/0.96寸OLED/images/module-front-back-pinout.webp"
+      git_blob_sha: "32b636e1c80c2724f33f6ccb86d846a9dba53803"
+      size: 125900
+    - source: "devices/0.96寸OLED/mechanical/pcb-4pin-B-27.3x27.8mm.pdf"
+      target: "devices/0.96寸OLED/mechanical/pcb-4pin-B-27.3x27.8mm.pdf"
+      git_blob_sha: "b04c140ead31181fc9dfb7995cdc60fe81e02b3f"
+      size: 72835
+    - source: "devices/0.96寸OLED/references/chip/SSD1306-Datasheet-Rev1.1.pdf"
+      target: "devices/0.96寸OLED/references/chip/SSD1306-Datasheet-Rev1.1.pdf"
+      git_blob_sha: "c17940971b592e1d88f7b0ac1671c922f79e6089"
+      size: 1876686
+    - source: "devices/0.96寸OLED/references/panel/Allvision-QG-2864KLBEG01-VerC.pdf"
+      target: "devices/0.96寸OLED/references/panel/Allvision-QG-2864KLBEG01-VerC.pdf"
+      git_blob_sha: "9b9d67a04fb87625da814b266743d4e27797ce85"
+      size: 1008477
+    - source: "devices/0.96寸OLED/software/Adafruit_SSD1306-d94f699.zip"
+      target: "devices/0.96寸OLED/software/Adafruit_SSD1306-d94f699.zip"
+      git_blob_sha: "4cfc8d49266c8082c53995ba1c56602ea8fcda80"
+      size: 47152
+    - source: "devices/5V 3.3V开关稳压模块轮趣/images/p03b-pinout.png"
+      target: "devices/5V 3.3V开关稳压模块轮趣/images/p03b-pinout.png"
+      git_blob_sha: "4f9bf4a53580b20558b35e9f0151ff4f4516cf74"
+      size: 406181
+    - source: "devices/5V 3.3V开关稳压模块轮趣/mechanical/p03b-mechanical-dimensions.png"
+      target: "devices/5V 3.3V开关稳压模块轮趣/mechanical/p03b-mechanical-dimensions.png"
+      git_blob_sha: "2e1c84f5be4262f51d332a9d336169453ccb7bc5"
+      size: 283183
+    - source: "devices/DC-DC降压电源模块直流双路可调电压输出/images/dual-channel-wiring-and-adjustment.png"
+      target: "devices/DC-DC降压电源模块直流双路可调电压输出/images/dual-channel-wiring-and-adjustment.png"
+      git_blob_sha: "215d7e54558a6fdca3df541eda7ee16a9f313178"
+      size: 177328
+    - source: "devices/DC-DC降压电源模块直流双路可调电压输出/mechanical/pcb-60x60mm.png"
+      target: "devices/DC-DC降压电源模块直流双路可调电压输出/mechanical/pcb-60x60mm.png"
+      git_blob_sha: "7c1584154971b8f32fe71c5aec72f4e0109bb2df"
+      size: 49511
+    - source: "devices/esp32-c3-supermini/electrical/schematic.png"
+      target: "devices/esp32-c3-supermini/electrical/schematic.png"
+      git_blob_sha: "b32b3d1a4a51805887b442b24342b43feb67fe79"
+      size: 177448
+    - source: "devices/esp32-c3-supermini/mechanical/board-18x22.5mm.png"
+      target: "devices/esp32-c3-supermini/mechanical/board-18x22.5mm.png"
+      git_blob_sha: "2febe5dd5c22d2740fbec0a5e4f0cea276afd556"
+      size: 115852
+    - source: "devices/esp32-c3-supermini/mechanical/Super Mini-ESP32C3-外形.PcbDoc"
+      target: "devices/esp32-c3-supermini/mechanical/Super Mini-ESP32C3-外形.PcbDoc"
+      git_blob_sha: "e4c987950bf6df46df210bd1aea63344ebfbda26"
+      size: 12059136
+    - source: "devices/esp32-c3-supermini/model/Super Mini-ESP32C3.step"
+      target: "devices/esp32-c3-supermini/model/Super Mini-ESP32C3.step"
+      git_blob_sha: "08ca3b9fca2ed2a5495d59c3c3a875bd53adc7ae"
+      size: 28019597
+    - source: "devices/esp32-c3-supermini/references/chip/ESP32-C3-Series-Datasheet-v2.4.pdf"
+      target: "devices/esp32-c3-supermini/references/chip/ESP32-C3-Series-Datasheet-v2.4.pdf"
+      git_blob_sha: "a4bfc750c0c6a47b3f662cd9d713ab9e1a141297"
+      size: 900158
+    - source: "devices/esp32-c3-supermini/references/chip/ESP32-C3-Technical-Reference-Manual-v1.4.pdf"
+      target: "devices/esp32-c3-supermini/references/chip/ESP32-C3-Technical-Reference-Manual-v1.4.pdf"
+      git_blob_sha: "5d0e97cd4118472ce72d9ac5c91cb577ef8e132e"
+      size: 9623028
+    - source: "devices/esp32-c3-supermini/references/ldo/ME6211A33M3G-N.PDF"
+      target: "devices/esp32-c3-supermini/references/ldo/ME6211A33M3G-N.PDF"
+      git_blob_sha: "c4593c95706c8babe411127263de4d051dc04402"
+      size: 1202499
+    - source: "devices/esp32-c6-supermini/electrical/schematic.png"
+      target: "devices/esp32-c6-supermini/electrical/schematic.png"
+      git_blob_sha: "1f0ed1422a25b1802e1feb3e816f8cc0c4618d83"
+      size: 342399
+    - source: "devices/esp32-c6-supermini/images/pinout-overview.jpg"
+      target: "devices/esp32-c6-supermini/images/pinout-overview.jpg"
+      git_blob_sha: "5c1143f961282104e4e6671eab434d7b546816dd"
+      size: 532911
+    - source: "devices/esp32-c6-supermini/mechanical/board-back-26x18mm.png"
+      target: "devices/esp32-c6-supermini/mechanical/board-back-26x18mm.png"
+      git_blob_sha: "a60186336e07ed154a00e2498f5270c520c6aa22"
+      size: 357510
+    - source: "devices/esp32-c6-supermini/mechanical/board-front-26x18mm.png"
+      target: "devices/esp32-c6-supermini/mechanical/board-front-26x18mm.png"
+      git_blob_sha: "120979ea1980ff08ffde1ebe01c79296a21ec365"
+      size: 404181
+    - source: "devices/esp32-c6-supermini/references/chip/ESP32-C6-Series-Datasheet-v1.5.pdf"
+      target: "devices/esp32-c6-supermini/references/chip/ESP32-C6-Series-Datasheet-v1.5.pdf"
+      git_blob_sha: "98dd38c0d53d451e3a113b11037ddb98911037ac"
+      size: 975625
+    - source: "devices/esp32-c6-supermini/references/chip/ESP32-C6-Technical-Reference-Manual-v1.2.pdf"
+      target: "devices/esp32-c6-supermini/references/chip/ESP32-C6-Technical-Reference-Manual-v1.2.pdf"
+      git_blob_sha: "d37c2d9ec400b2bd0f550dc76dda6d8eadbf537f"
+      size: 12683821
+    - source: "devices/esp32-c6-supermini/references/ldo/ME6211A33M3G-N.PDF"
+      target: "devices/esp32-c6-supermini/references/ldo/ME6211A33M3G-N.PDF"
+      git_blob_sha: "c4593c95706c8babe411127263de4d051dc04402"
+      size: 1202499
+    - source: "devices/esp32-c6-supermini/software/boot_app0.bin"
+      target: "devices/esp32-c6-supermini/software/boot_app0.bin"
+      git_blob_sha: "13562cabb9648287fdf70d2a22789fdf1e4156b4"
+      size: 8192
+    - source: "devices/esp32-c6-supermini/software/superminiC6TEST.ino.bin"
+      target: "devices/esp32-c6-supermini/software/superminiC6TEST.ino.bin"
+      git_blob_sha: "a9d4de9c25d28528891026023586e3fd07b92787"
+      size: 842176
+    - source: "devices/esp32-c6-supermini/software/superminiC6TEST.ino.bootloader.bin"
+      target: "devices/esp32-c6-supermini/software/superminiC6TEST.ino.bootloader.bin"
+      git_blob_sha: "981a719ad2e59a41218725513d69a735027b8377"
+      size: 14624
+    - source: "devices/esp32-c6-supermini/software/superminiC6TEST.ino.partitions.bin"
+      target: "devices/esp32-c6-supermini/software/superminiC6TEST.ino.partitions.bin"
+      git_blob_sha: "2108af95027991013a6102b0f11b62794cd18306"
+      size: 3072
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/electrical/module-block.png"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/electrical/module-block.png"
+      git_blob_sha: "a5f80b0db357a9d45831050342ace3c78b073f0b"
+      size: 70631
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/electrical/typical-application.png"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/electrical/typical-application.png"
+      git_blob_sha: "b1ebfc707c530861cf0556fd071b04128304ee4f"
+      size: 184006
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/images/module-top.png"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/images/module-top.png"
+      git_blob_sha: "964a786396f43a4282bf203cbb4987b3f469296b"
+      size: 31058
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/images/pin-layout-top.png"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/images/pin-layout-top.png"
+      git_blob_sha: "c8bc341c4c268e06b3990f825189fe3162cb576a"
+      size: 114543
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/mechanical/land-pattern.png"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/mechanical/land-pattern.png"
+      git_blob_sha: "349735af66e5b4cc869bdbe1a55e5fe290351e0c"
+      size: 130561
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/mechanical/module-18x25.5mm.png"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/mechanical/module-18x25.5mm.png"
+      git_blob_sha: "9e3ce1bede200b0218c45700fa0effe63c06c81b"
+      size: 96787
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/references/chip/ESP32-S3-Series-Datasheet-v2.2.pdf"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/references/chip/ESP32-S3-Series-Datasheet-v2.2.pdf"
+      git_blob_sha: "833b2659f2379fe4e4ab6364a37472feebb319e4"
+      size: 1098115
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/references/chip/ESP32-S3-Technical-Reference-Manual-v1.8.pdf"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/references/chip/ESP32-S3-Technical-Reference-Manual-v1.8.pdf"
+      git_blob_sha: "962285dc0345fa3c52ccf02f48a1c769347506cb"
+      size: 15215232
+    - source: "devices/ESP32-S3-WROOM-1-N8R2/references/chip/ESP32-S3-WROOM-1-WROOM-1U-Datasheet-v1.8.pdf"
+      target: "devices/ESP32-S3-WROOM-1-N8R2/references/chip/ESP32-S3-WROOM-1-WROOM-1U-Datasheet-v1.8.pdf"
+      git_blob_sha: "b163c4c4c122c3c58aab76bbaa263bf9a5a54786"
+      size: 1280501
+    - source: "devices/INMP441全向麦克风/images/module-front-pinout.webp"
+      target: "devices/INMP441全向麦克风/images/module-front-pinout.webp"
+      git_blob_sha: "b59f88d29ef17e80dfb26222f8a451628e2eaa0e"
+      size: 74892
+    - source: "devices/INMP441全向麦克风/images/module-front-silkscreen.webp"
+      target: "devices/INMP441全向麦克风/images/module-front-silkscreen.webp"
+      git_blob_sha: "f9d4151f31a3798a2ecb931b47c6e80dc3202954"
+      size: 84604
+    - source: "devices/INMP441全向麦克风/mechanical/merchant-overlay-14mm.jpg"
+      target: "devices/INMP441全向麦克风/mechanical/merchant-overlay-14mm.jpg"
+      git_blob_sha: "f9793bfc6b59caac60af10842dc193719ac1787a"
+      size: 98124
+    - source: "devices/INMP441全向麦克风/mechanical/pcb-14mm-back.webp"
+      target: "devices/INMP441全向麦克风/mechanical/pcb-14mm-back.webp"
+      git_blob_sha: "0c75b6b91fbb2508adf99918e8c77ad83de5ea53"
+      size: 68844
+    - source: "devices/INMP441全向麦克风/references/chip/INMP441-Datasheet-DS-INMP441-00-Rev1.1.pdf"
+      target: "devices/INMP441全向麦克风/references/chip/INMP441-Datasheet-DS-INMP441-00-Rev1.1.pdf"
+      git_blob_sha: "56b9bca788f4e300543a4d8a9cf8dd17e0312869"
+      size: 477735
+    - source: "devices/TB6612FNG双路直流电机驱动模块/images/d153c-pinout.png"
+      target: "devices/TB6612FNG双路直流电机驱动模块/images/d153c-pinout.png"
+      git_blob_sha: "23b7ba57862c18e1a17874905be34cb77b45d52f"
+      size: 297913
+    - source: "devices/TB6612FNG双路直流电机驱动模块/images/d153c-protection-components.png"
+      target: "devices/TB6612FNG双路直流电机驱动模块/images/d153c-protection-components.png"
+      git_blob_sha: "887c943da18abb10785706bee03bb331f966b624"
+      size: 376596
+    - source: "devices/TB6612FNG双路直流电机驱动模块/mechanical/d153c-mechanical-dimensions.png"
+      target: "devices/TB6612FNG双路直流电机驱动模块/mechanical/d153c-mechanical-dimensions.png"
+      git_blob_sha: "a3e277429035eccff9211f7686cc25e804eb0715"
+      size: 130183
+    - source: "devices/六轴IMU ICM45686模块/electrical/module-schematic.png"
+      target: "devices/六轴IMU ICM45686模块/electrical/module-schematic.png"
+      git_blob_sha: "623b3cfc850807ed9d6a17015a0109460f09325e"
+      size: 76212
+    - source: "devices/六轴IMU ICM45686模块/images/正面.png"
+      target: "devices/六轴IMU ICM45686模块/images/正面.png"
+      git_blob_sha: "af8d3546e542aba53e52344b6cd88eed7ca1af2e"
+      size: 787892
+    - source: "devices/六轴IMU ICM45686模块/images/背面.png"
+      target: "devices/六轴IMU ICM45686模块/images/背面.png"
+      git_blob_sha: "6631c991acc03573c3f7d464c315f6b05e4dd3e4"
+      size: 1515808
+    - source: "devices/六轴IMU ICM45686模块/mechanical/module-15x18mm.png"
+      target: "devices/六轴IMU ICM45686模块/mechanical/module-15x18mm.png"
+      git_blob_sha: "120cd926bbc16a9f0976e350409226d54b7d938c"
+      size: 50375
+    - source: "devices/六轴IMU ICM45686模块/references/chip/ICM-45686-datasheet-rev1.0.pdf"
+      target: "devices/六轴IMU ICM45686模块/references/chip/ICM-45686-datasheet-rev1.0.pdf"
+      git_blob_sha: "29686462da73f9d2e54d4cf14b09379e798f49fe"
+      size: 2574198
+    - source: "devices/机器人稳压电源拓展板/images/robot-power-board-connectors-and-functions.jpg"
+      target: "devices/机器人稳压电源拓展板/images/robot-power-board-connectors-and-functions.jpg"
+      git_blob_sha: "7a9d9c286cbd42f6fbc20a46d81cfd1220ccfaa3"
+      size: 109589
+    - source: "devices/机器人稳压电源拓展板/mechanical/pcb-65x56mm.jpg"
+      target: "devices/机器人稳压电源拓展板/mechanical/pcb-65x56mm.jpg"
+      git_blob_sha: "017ea3a913ff6d6383ce330db5c3520ccf300e20"
+      size: 110680
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/electrical/pin-assignment.pdf"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/electrical/pin-assignment.pdf"
+      git_blob_sha: "615ee8b36cea1f03fda73258a7d288ab3eaf0536"
+      size: 1538704
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/electrical/schematic-2024-01-17.pdf"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/electrical/schematic-2024-01-17.pdf"
+      git_blob_sha: "9ffa3643c4bd5037900262acdff0a073fcafe59e"
+      size: 1367561
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/images/board-back.png"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/images/board-back.png"
+      git_blob_sha: "6066e6715dcaa4f3647275ad2de88af0d54cb441"
+      size: 1177469
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/1.jpeg"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/1.jpeg"
+      git_blob_sha: "f54ef8b2e70ddc9226b8474a4dfb2b02a80be3a2"
+      size: 583180
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/2.jpeg"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/2.jpeg"
+      git_blob_sha: "ec12bcea53f880faac8f9b93a6e370b6e1aff0e2"
+      size: 230909
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/3.jpeg"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/3.jpeg"
+      git_blob_sha: "0f7cc2486e43c0e0c48057f4fb5929de1a855692"
+      size: 208135
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/4.jpeg"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/4.jpeg"
+      git_blob_sha: "d7fdf018816d9a63bd299990506a25ce2d3f009d"
+      size: 408370
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/5.jpeg"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/5.jpeg"
+      git_blob_sha: "0fbe2f49a3b4f4ec0fa8d6c0973ed9d0bb72aabe"
+      size: 206088
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/6.jpeg"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/images/promotion/6.jpeg"
+      git_blob_sha: "37b35ef76d9aadf670a17b2d74564e99524f394b"
+      size: 171031
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/references/chip/ES0182-STM32F405-407-Errata.pdf"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/references/chip/ES0182-STM32F405-407-Errata.pdf"
+      git_blob_sha: "a46214cb8b3ddbb4220c950f335ef6ee888bbf3b"
+      size: 2231932
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/references/chip/RM0090-Rev22.pdf"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/references/chip/RM0090-Rev22.pdf"
+      git_blob_sha: "fb27dbb850f1beea2e6c5bbb4b2054aa8d6d1343"
+      size: 21385881
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/references/chip/STM32F407VE-Datasheet-DS8626-Rev12.pdf"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/references/chip/STM32F407VE-Datasheet-DS8626-Rev12.pdf"
+      git_blob_sha: "be340c798c07d2cfbde86543825baa4e333136b9"
+      size: 2792056
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/001寄存器点灯.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/001寄存器点灯.zip"
+      git_blob_sha: "91ea8cd7ee0d2dc3bb78066e0e46f37fa2f041bf"
+      size: 946572
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/002库函数点灯.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/002库函数点灯.zip"
+      git_blob_sha: "d4d300d90e1489a81a9fe374b19f029035711616"
+      size: 946633
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/003滴答定时器灯闪烁.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/003滴答定时器灯闪烁.zip"
+      git_blob_sha: "299b0db4d0c6e85ee34a9b523c1cc8af2ce40711"
+      size: 946698
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/004位带操作.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/004位带操作.zip"
+      git_blob_sha: "3e67ed0822cd53cce9bac8ff08625d625f6e598b"
+      size: 946653
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/005串口打印信息.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/005串口打印信息.zip"
+      git_blob_sha: "38e3f1edc032a6afb24e068d454952b2f289fb36"
+      size: 946748
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/006按键点灯.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/006按键点灯.zip"
+      git_blob_sha: "84e6e502783849fe86d12545c7b546744322f180"
+      size: 947064
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/007外部中断按键点灯.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/007外部中断按键点灯.zip"
+      git_blob_sha: "2dd487ed22d0dc4193edbe46f342192f05f33b61"
+      size: 947157
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/008定时器灯闪烁.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/008定时器灯闪烁.zip"
+      git_blob_sha: "32da9defdac88daa09dad1fc32cc622b0b592516"
+      size: 947136
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/009PWM呼吸灯.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/009PWM呼吸灯.zip"
+      git_blob_sha: "e2bc5cfb947df605a90f7c63eef94bf4b354f311"
+      size: 947467
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/010串口中断DMA接收二合一.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/010串口中断DMA接收二合一.zip"
+      git_blob_sha: "8de67b0a2b5bf2dfb4925d1ee4fc0535a639ba3d"
+      size: 948968
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/011ADC采集.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/011ADC采集.zip"
+      git_blob_sha: "b56ebccdece4c623e1dc7f67b5b9f3d6628ddc30"
+      size: 947483
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/012软件I2C(SHT20).zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/012软件I2C(SHT20).zip"
+      git_blob_sha: "fbe0217ff224652a7ae61e5356d98cbe26dbcb4b"
+      size: 949390
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/014硬件SPI(flash).zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/014硬件SPI(flash).zip"
+      git_blob_sha: "101862b97c733add14c7ad0cc07f7ceaa5508d4b"
+      size: 950799
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/014软件SPI(flash).zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/014软件SPI(flash).zip"
+      git_blob_sha: "9f52fd902bd46c360596739f90f5f171b9a8d268"
+      size: 950424
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/015RTC时钟实验(可做掉电实验).zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/015RTC时钟实验(可做掉电实验).zip"
+      git_blob_sha: "b5b6f6dc896821cb2c4f12dcef73b1328c15280a"
+      size: 949516
+    - source: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/STM32F407_ProjectTemplate.zip"
+      target: "devices/立创·天空星STM32F407VET6开发板-青春版/software/board-examples/STM32F407_ProjectTemplate.zip"
+      git_blob_sha: "8e07e0d5d39158a7595cc05a85522829c4e248b8"
+      size: 946852
+    - source: "devices/美新 MMC5983MA模块 三轴磁传感器/mechanical/module-15x10mm.webp"
+      target: "devices/美新 MMC5983MA模块 三轴磁传感器/mechanical/module-15x10mm.webp"
+      git_blob_sha: "68bdc3714dd5ddddd4aaf816f758e88dd9a2e92d"
+      size: 357226
+    - source: "devices/美新 MMC5983MA模块 三轴磁传感器/references/chip/MMC5983MA-Datasheet-RevA.pdf"
+      target: "devices/美新 MMC5983MA模块 三轴磁传感器/references/chip/MMC5983MA-Datasheet-RevA.pdf"
+      git_blob_sha: "3a09e20bb67b7f7b8d90137ad37181b2b82e6280"
+      size: 1183817
+    - source: "devices/美新 MMC5983MA模块 三轴磁传感器/software/SparkFun-MMC5983MA-Arduino-v1.1.5-6e5c914.zip"
+      target: "devices/美新 MMC5983MA模块 三轴磁传感器/software/SparkFun-MMC5983MA-Arduino-v1.1.5-6e5c914.zip"
+      git_blob_sha: "bf0ef13781e0da160c6dbb10976a09665ae6b53f"
+      size: 577567
+    - source: "devices/轮趣MG513电机（GMR编码器）/images/mg513-gmr-pinout.png"
+      target: "devices/轮趣MG513电机（GMR编码器）/images/mg513-gmr-pinout.png"
+      git_blob_sha: "aa67fc561e2b12bf6a404212716fe0d844c8cbb1"
+      size: 63284
+    - source: "devices/轮趣MG513电机（GMR编码器）/mechanical/37mm-right-angle-bracket-dimensions.png"
+      target: "devices/轮趣MG513电机（GMR编码器）/mechanical/37mm-right-angle-bracket-dimensions.png"
+      git_blob_sha: "3175b3a82eeadbb50aa7523ed526a75616d2cace"
+      size: 112754
+    - source: "devices/轮趣MG513电机（GMR编码器）/mechanical/65mm-wheel-dimensions.png"
+      target: "devices/轮趣MG513电机（GMR编码器）/mechanical/65mm-wheel-dimensions.png"
+      git_blob_sha: "e6afbc135588c9fe3ec02e147b5a773fd2f28179"
+      size: 164860
+    - source: "devices/轮趣MG513电机（GMR编码器）/mechanical/85mm-wheel-dimensions.png"
+      target: "devices/轮趣MG513电机（GMR编码器）/mechanical/85mm-wheel-dimensions.png"
+      git_blob_sha: "68bcf30ce2a096fc0c24adc53bc18c92d182bbc7"
+      size: 211693
+    - source: "devices/轮趣MG513电机（GMR编码器）/mechanical/mg513-gmr-mechanical-dimensions.png"
+      target: "devices/轮趣MG513电机（GMR编码器）/mechanical/mg513-gmr-mechanical-dimensions.png"
+      git_blob_sha: "8dfe653535e3081b001eeeb7e1bc6d9a19338a00"
+      size: 111753
+  material:
+    - source: "material/connectors/usb-a-male-smd/images/product.png"
+      target: "material/connectors/usb-a-male-smd/images/product.png"
+      git_blob_sha: "4a56373efe5181b5412b388fd7560c786eab4f87"
+      size: 106794
+    - source: "material/connectors/usb-a-male-smd/mechanical/dimensions.png"
+      target: "material/connectors/usb-a-male-smd/mechanical/dimensions.png"
+      git_blob_sha: "d54677015543875799d40f948cc4abfb01c515a9"
+      size: 61844
+    - source: "material/connectors/usb-c-16p/images/product.png"
+      target: "material/connectors/usb-c-16p/images/product.png"
+      git_blob_sha: "bef891cc8317611926f8680334f73834f53a70a0"
+      size: 33749
+    - source: "material/modules/lipo-523450-1000/datasheets/pcm-spec.png"
+      target: "material/modules/lipo-523450-1000/datasheets/pcm-spec.png"
+      git_blob_sha: "0e108c5f13c383761cce9eeadf68efdba4c65cf4"
+      size: 782390
+    - source: "material/modules/lipo-523450-1000/images/pcm-bw1835.png"
+      target: "material/modules/lipo-523450-1000/images/pcm-bw1835.png"
+      git_blob_sha: "167e8589726eff0b2457f00c5c74a115adde1ef1"
+      size: 167249
+    - source: "material/modules/lipo-523450-1000/images/product.png"
+      target: "material/modules/lipo-523450-1000/images/product.png"
+      git_blob_sha: "39cf9c7c7dde4f95332cb6ad224e1fd750962cd3"
+      size: 168265
+    - source: "material/pcb/led-3528-rgb/mechanical/dimensions.png"
+      target: "material/pcb/led-3528-rgb/mechanical/dimensions.png"
+      git_blob_sha: "75cb1d3c2406c343a0660778fddf4522e599084d"
+      size: 110893
+    - source: "material/pcb/pesd1can/datasheets/PESD1CAN-Nexperia-Rev04.pdf"
+      target: "material/pcb/pesd1can/datasheets/PESD1CAN-Nexperia-Rev04.pdf"
+      git_blob_sha: "8f3b502a20a195ce39b74c747b92f504bc25025d"
+      size: 616470
+    - source: "material/pcb/ss12d00/images/product.png"
+      target: "material/pcb/ss12d00/images/product.png"
+      git_blob_sha: "e4aa26efd354b8967fa9e53735cc3203cd4424a2"
+      size: 144981
+    - source: "material/pcb/ss12d00/mechanical/dimensions-g3.png"
+      target: "material/pcb/ss12d00/mechanical/dimensions-g3.png"
+      git_blob_sha: "588f4a11ae164368efc4e4b95217fcdc5a15992a"
+      size: 82924
+    - source: "material/pcb/tact-3x4-2p/images/product.png"
+      target: "material/pcb/tact-3x4-2p/images/product.png"
+      git_blob_sha: "4c83b9178ed7c2581131e1b5c80d4bb10ae7b035"
+      size: 169657
+    - source: "material/pcb/tact-3x4-2p/mechanical/dimensions.png"
+      target: "material/pcb/tact-3x4-2p/mechanical/dimensions.png"
+      git_blob_sha: "38736f9f077899e9f9ddaa04e79a97bace58aa5d"
+      size: 232080
+    - source: "material/pcb/ttc-5p5/images/product.png"
+      target: "material/pcb/ttc-5p5/images/product.png"
+      git_blob_sha: "68849dd8b8a010f44c95a4ed3eb185539e7022c5"
+      size: 48247
+    - source: "material/pcb/ttc-5p5/mechanical/dimensions.png"
+      target: "material/pcb/ttc-5p5/mechanical/dimensions.png"
+      git_blob_sha: "9663bf52dc2ff0d8ed59c3ccc1ed738b8884aafd"
+      size: 149640
+    - source: "material/purchases/source/平衡小车_物料库与工具库_2026-08-11.xlsx"
+      target: "material/purchases/source/平衡小车_物料库与工具库_2026-08-11.xlsx"
+      git_blob_sha: "a7be3509753fab9fd1276ca6fad68ff25e395a6f"
+      size: 27528
+    - source: "material/wait_organize/3528RGB/侧视图.png"
+      target: "material/wait_organize/3528RGB/侧视图.png"
+      git_blob_sha: "58e6661f0b4c3976087d500f67857e4897033e29"
+      size: 21620
+    - source: "material/wait_organize/3528RGB/引脚图与内部电路.png"
+      target: "material/wait_organize/3528RGB/引脚图与内部电路.png"
+      git_blob_sha: "33572dfce8ed6bd412a633d6cfad491d411fb57a"
+      size: 58496
+    - source: "material/wait_organize/3528RGB/推荐焊盘.png"
+      target: "material/wait_organize/3528RGB/推荐焊盘.png"
+      git_blob_sha: "0eb72ee43513505ba39d8b2e604081adf60a2fc6"
+      size: 92231
+    - source: "material/wait_organize/MX底座/5ea75d84e431b4d0c68ab6e4e17d332c.pdf"
+      target: "material/wait_organize/MX底座/5ea75d84e431b4d0c68ab6e4e17d332c.pdf"
+      git_blob_sha: "d42e32121ac1e22157478c24a81d33852c7cc245"
+      size: 1027345
+    - source: "material/wait_organize/MX底座/Screenshot 2026-08-28 182251.jpg"
+      target: "material/wait_organize/MX底座/Screenshot 2026-08-28 182251.jpg"
+      git_blob_sha: "fb7a6448346448256404133b19595627d0779b26"
+      size: 44562
+    - source: "material/wait_organize/SS12D/1037A069FE9BBCECE56007AB916D4384.pdf"
+      target: "material/wait_organize/SS12D/1037A069FE9BBCECE56007AB916D4384.pdf"
+      git_blob_sha: "e97153e51e4d4e7d92198e3a3c53c5993dba3136"
+      size: 556437
+    - source: "material/wait_organize/Type-A弯插公头/C404965-立创托管-首韩AM90-2011revC.pdf"
+      target: "material/wait_organize/Type-A弯插公头/C404965-立创托管-首韩AM90-2011revC.pdf"
+      git_blob_sha: "7e54ea9246c01785f1a8cce6499b032f89c7a832"
+      size: 910746
+    - source: "material/wait_organize/Type-A弯插公头/机械图.pdf"
+      target: "material/wait_organize/Type-A弯插公头/机械图.pdf"
+      git_blob_sha: "cdb331bb60128b9ed153d4449b6a2cbc61edb9fa"
+      size: 177964
+    - source: "material/wait_organize/轻触开关/018751F0E8A5E9E18A324C5313314AA2.pdf"
+      target: "material/wait_organize/轻触开关/018751F0E8A5E9E18A324C5313314AA2.pdf"
+      git_blob_sha: "46bed212436a3e60edbd5005831d500a3495a1c5"
+      size: 134256
+  kicad_private_3d:
+    - source: "kicad/libraries/private/vibecoder.3dshapes/HS_CPG151101S11_MX.step"
+      target: "kicad/libraries/private/vibecoder.3dshapes/HS_CPG151101S11_MX.step"
+      git_blob_sha: "01d32b4443a380a77f5291aa6e9d13dadc391b47"
+      size: 552289
+    - source: "kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.step"
+      target: "kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.step"
+      git_blob_sha: "de0a68474e5a2ad7d1b10b6d3ecb86e596280d82"
+      size: 1052880
+    - source: "kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.stl"
+      target: "kicad/libraries/private/vibecoder.3dshapes/INMP441_Module.stl"
+      git_blob_sha: "e341fc0c64c9537fb9b169364246942ba3a63339"
+      size: 91884
+    - source: "kicad/libraries/private/vibecoder.3dshapes/LED_RGB_3528_PLCC4.step"
+      target: "kicad/libraries/private/vibecoder.3dshapes/LED_RGB_3528_PLCC4.step"
+      git_blob_sha: "7d081f6e14466fcbbd34380c1acb096cccf13ab4"
+      size: 2028178
+    - source: "kicad/libraries/private/vibecoder.3dshapes/RotaryEncoder_TTC_5mm.step"
+      target: "kicad/libraries/private/vibecoder.3dshapes/RotaryEncoder_TTC_5mm.step"
+      git_blob_sha: "a6d9defbfd432a2c149f1d37bff8e58fdbbcec58"
+      size: 4750765
+    - source: "kicad/libraries/private/vibecoder.3dshapes/SS12D00G3.stp"
+      target: "kicad/libraries/private/vibecoder.3dshapes/SS12D00G3.stp"
+      git_blob_sha: "2ff02a8838f98d92a784cfbedc9ccf5816d84de2"
+      size: 318875
+

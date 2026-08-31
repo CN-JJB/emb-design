@@ -1,0 +1,5 @@
+; 同 fp-lib-table.sample：常规走全局注册，这份只作备用。
+(sym_lib_table
+  (version 7)
+  (lib (name "vibecoder")(type "KiCad")(uri "${CONTROL_LIB}/private/vibecoder.kicad_sym")(options "")(descr "私有库：本项目自建符号"))
+)

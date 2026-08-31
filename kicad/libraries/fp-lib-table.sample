@@ -1,0 +1,6 @@
+; 只有当你不想用全局注册、要把库绑死在某个工程里时才需要这个。
+; 常规做法是跑 kicad/tools/register_libs_to_kicad.py 注册到全局，工程里不用配。
+(fp_lib_table
+  (version 7)
+  (lib (name "vibecoder")(type "KiCad")(uri "${CONTROL_LIB}/private/vibecoder.pretty")(options "")(descr "私有库：本项目自建 + 单个引入的封装"))
+)

@@ -1,0 +1,28 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: pptc-1812-1a1
+name: PPTC 1.1 A / 33 V 1812
+aliases:
+  - PPTC 1.1A
+  - C181347
+kind: pcb
+category: protection
+package: 1812
+qty: 10
+status: 现有
+lcsc: C181347
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: PPTC
+  ih: 1.1A
+  vmax_claim: 33V
+  package: 1812
+pending:
+  - vmax
+warnings:
+  - 1.1 A 件用于 12 V 支路时耐压是硬指标（需 ≥30 V）。商品页 Vmax/保持/动作电流待核。
+summary: 自恢复保险丝 1.1 A / 33 V，1812，10 只

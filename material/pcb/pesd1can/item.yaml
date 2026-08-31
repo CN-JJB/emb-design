@@ -1,0 +1,29 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: pesd1can
+name: PESD1CAN CAN ESD
+aliases:
+  - PESD1CAN
+  - PESD1CAN-U
+  - C15771
+kind: pcb
+category: semiconductor
+package: SOT-23
+qty: 20
+status: 现有
+lcsc: C15771
+lcsc_trust: equivalent
+solder: caution
+specs:
+  type: ESD
+  channels: 2
+  bus: CAN
+  package: SOT-23
+files:
+  datasheet: datasheets/PESD1CAN-Nexperia-Rev04.pdf
+notes:
+  - 手册从 material/datasheets/ 迁入，Nexperia Rev 04。
+summary: CAN 双通道 ESD，SOT-23，20 只；手册在本目录

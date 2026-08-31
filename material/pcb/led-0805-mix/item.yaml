@@ -1,0 +1,25 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: led-0805-mix
+name: 0805 LED 混色包
+aliases:
+  - 0805 LED
+  - C2295
+kind: pcb
+category: led
+package: 0805
+qty: 50
+status: 现有
+lcsc: C2295
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: LED
+  package: 0805
+  colors: 红/黄/蓝/绿/白各10
+notes:
+  - C 编号只给红灯作参考，其它颜色同封装。
+summary: 红/黄/蓝/绿/白各 10，共 50；红灯参考 C2295

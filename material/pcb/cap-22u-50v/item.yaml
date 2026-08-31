@@ -1,0 +1,25 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: cap-22u-50v
+name: 22 µF / 50 V 铝电解
+aliases:
+  - ERG50V22M5X11
+  - C47344185
+kind: pcb
+category: capacitor
+package: radial
+qty: 60
+status: 现有
+lcsc: C47344185
+lcsc_trust: official
+solder: friendly
+specs:
+  mpn: ERG50V22M5X11
+  size: D5×L11
+  height_mm: 11
+notes:
+  - 直插电解高度均为 11 mm。板上方要插模块时垂直净空必须留够。
+summary: 22 µF / 50 V 铝电解，D5×L11，高度 11 mm

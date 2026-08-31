@@ -1,0 +1,30 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: pptc-1812-0a5
+name: PPTC 0.5 A / 30 V 1812
+aliases:
+  - PPTC 0.5A
+  - C18198331
+kind: pcb
+category: protection
+package: 1812
+qty: 10
+status: 现有
+lcsc: C18198331
+lcsc_trust: equivalent
+solder: friendly
+specs:
+  type: PPTC
+  ih: 0.5A
+  vmax_claim: 30V
+  package: 1812
+pending:
+  - vmax
+warnings:
+  - 12 V 支路的 Vmax 是硬指标。0.5 A 这颗标 30 V，用在 12 V 前须看商品页确认。
+notes:
+  - "保险丝管见 fuse-5x20-*；座子见 fuse-holder-5x20。没有汽车插片方案。"
+summary: 自恢复保险丝 0.5 A / 30 V，1812，10 只

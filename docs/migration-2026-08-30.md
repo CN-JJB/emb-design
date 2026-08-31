@@ -42,7 +42,7 @@
 
 以后用户在对话中给出新器件、购买信息或库资源时，优先直接加入本仓库并同步索引。不要只上传孤立文件；必须更新可检索元数据和 KiCad 资源状态。
 
-## 2026-08-31 第二轮：本地二进制迁移完成
+## 2026-08-30 第二轮：本地二进制迁移完成
 
 按 `docs/local-ai-binary-migration.md` 与 `docs/local-ai-binary-manifest.yaml`，通过本地 Git/CLI 将剩余二进制资产从 `CN-JJB/embbed-projects` 复制到本仓库：
 
@@ -61,4 +61,13 @@
 
 `index/kicad-assets.yaml` 中 6 个私有 3D 模型状态已由 `source-only` 改为 `ready`，并记录本仓库实际路径（`kicad/libraries/private/vibecoder.3dshapes/...`）。
 
-提交：`3442173`（`Migrate remaining device, material, and KiCad binary assets`）
+远端二进制迁移提交：`71fb9bdbcd104761d657bcbce8385105a0b84b8e`（`Migrate remaining device, material, and KiCad binary assets`）
+
+
+### Web AI 复核
+
+- 复核时间（America/Los_Angeles）：2026-08-30。
+- 按 manifest 逐路径比对目标仓库：118/118 文件存在。
+- 逐文件 Git blob SHA 与源仓库一致：118/118。
+- 6 个私有 KiCad 3D 模型均已存在于目标路径，且 `index/kicad-assets.yaml` 状态均为 `ready`。
+- 未发现 LFS 指针替代原文件或字节不一致情况。

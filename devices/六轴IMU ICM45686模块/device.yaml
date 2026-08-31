@@ -1,0 +1,37 @@
+id: icm45686
+name: ICM-45686 六轴 IMU 模块
+aliases: [ICM-45686, ICM45686, 六轴IMU]
+category: sensor
+roles: [imu]
+chip: ICM-45686
+chip_vendor: TDK/InvenSense
+interfaces: [i2c, spi]
+voltage:
+  module_vcc: [3.3, 5.0]
+  io_logic_v: 3.3
+  ldo: ME6211C33M5G-N
+i2c:
+  address_7bit: ["0x68", "0x69"]
+  who_am_i: {reg: "0x72", value: "0xE9"}
+pins:
+  main_7p: [VCC, GND, AD0-MISO, SDA-MOSI, SCL-SCLK, CS, INT1]
+  aux_3p: [SDX, SCX, INT2]
+  headers_soldered: false
+mechanical:
+  pcb_mm: [15.000, 18.000]
+  hole_diameter_mm: 3.000
+  hole_pitch_mm: 13.500
+  revision: V1.3
+  source: drawing-and-photo
+warnings:
+  - 模块可 5 V 供电，不代表 IO 耐 5 V。
+  - AD0 不要悬空。
+  - 原理图标题残留 lsm6dsv，以丝印和 WHO_AM_I 为准。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware.md
+  photo_front: images/正面.png
+  photo_back: images/背面.png
+  schematic: electrical/module-schematic.png
+  mechanical: mechanical/module-15x18mm.png
+  datasheet: references/chip/ICM-45686-datasheet-rev1.0.pdf

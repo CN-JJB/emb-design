@@ -1,0 +1,38 @@
+id: tb6612-d153c
+name: D153C TB6612FNG 双路稳压电机驱动
+aliases: [D153C, TB6612FNG, TB6612, 双路直流电机驱动]
+category: driver
+roles: [motor-driver]
+chip: TB6612FNG
+module_vendor: WHEELTEC
+interfaces: [header-2.54, XH-6P]
+voltage:
+  vm: [4.5, 15]
+  logic: [3.3, 5]
+  i_cont_a: 1.2
+  i_peak_a: 3.2
+  aux_5v_a: 3
+  aux_3v3_a: 0.5
+pins:
+  h2_top_to_bottom: [E2B, E2A, E1B, E1A, ADC, GND, 5V]
+  h1_top_to_bottom: [PWMB, BIN2, BIN1, STBY, AIN1, AIN2, PWMA]
+  motor_b: [BO1, 3V3, E2A, E2B, GND, BO2]
+  motor_a: [AO2, 3V3, E1A, E1B, GND, AO1]
+  encoder_level_v: 3.3
+  pinout_confirmed_by_user: true
+mechanical:
+  pcb_mm: [50, 50]
+  hole_pitch_mm: [44, 44]
+  hole_diameter_mm: 3.2
+  source: merchant-drawing
+warnings:
+  - 编码器由电机座 3V3 供电，H2 的 5V 是辅助输出，不要当成编码器电平。
+  - 与 MG513 的 XH2.54-6P 线序方向相反，接线前先量第 5 脚对第 2 脚是否为 3.3 V。
+  - 主电源未通时不要从 MCU IO 反灌。
+  - 持续电流按 1.2 A/路，3.2 A 不能当连续能力。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware.md
+  photo_pinout: images/d153c-pinout.png
+  photo_protection: images/d153c-protection-components.png
+  mechanical: mechanical/d153c-mechanical-dimensions.png

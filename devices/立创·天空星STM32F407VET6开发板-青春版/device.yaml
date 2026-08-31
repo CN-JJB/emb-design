@@ -1,0 +1,36 @@
+id: stm32f407-skystar
+name: 立创·天空星 STM32F407VET6 青春版
+aliases: [天空星, 梁山派, STM32F407VET6, 青春版]
+category: mcu
+roles: [dev-board]
+chip: STM32F407VET6
+interfaces: [swd, usb-fs, usart1, sdio, header-2x20]
+voltage:
+  io_logic_v: 3.3
+  usb_vbus: 5
+  five_v_pin_isolation: false
+pins:
+  p1_p2: 2x20
+  pitch_mm: 2.54
+  row_end_span_mm: 48.26
+  row_center_span_mm: 35.56
+  headers_soldered: false
+  usart1: {tx: PA9, rx: PA10}
+  usb: {dm: PA11, dp: PA12}
+  led: PB2
+  key: PA0
+mechanical:
+  pcb_mm: [45.0, 69.9]
+youth_unpopulated: [W25Q128, LSE-32768, RTC-battery, REF3030]
+warnings:
+  - P1/P2 两排中心距 35.56 mm，不是 33.02 mm。
+  - USB-C 无 UART 芯片；调试串口外接 3.3 V USB-TTL。
+  - PIN_IN_+5V 到 VBUS 只有自恢复保险丝，没有隔离二极管，外部 5 V 与 USB 不能同时灌。
+  - 青春版未焊 W25Q128 / LSE / RTC 座，相关例程不能当已安装。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware-and-pinout.md
+  pin_map: docs/pin-header-p1-p2-map.md
+  schematic: electrical/schematic-2024-01-17.pdf
+  pin_pdf: electrical/pin-assignment.pdf
+  datasheet: references/chip/STM32F407VE-Datasheet-DS8626-Rev12.pdf

@@ -1,0 +1,28 @@
+id: yb-mpp01
+name: YAHBOOM YB-MPP01 稳压电源扩展板
+aliases: [YB-MPP01, YB-MPP01-V1.0, 机器人稳压电源拓展板, 亚博]
+category: power
+roles: [buck, sbc-supply]
+chip: null
+module_vendor: YAHBOOM
+interfaces: [KF301-2P, XH2.54-2P, DC5525, USB-C, PH2.0-2P, DC5521, header-2x6]
+voltage:
+  vin: [6, 24]
+  vout: 5
+  iout_6vin_a: 3
+  iout_7to24vin_a: 5
+mechanical:
+  pcb_mm: [65, 56]
+  height_mm: 13.8
+  hole_diameter_mm: 2.7
+  screw: M2.5
+warnings:
+  - 输出端禁止反向灌入电压。
+  - Type-C 需 PD 数据线，否则可能无输出。
+  - 6P 排针是 5 V 输出，不是输入。
+  - 一次只接一路输入电源。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware.md
+  photo: images/robot-power-board-connectors-and-functions.jpg
+  mechanical: mechanical/pcb-65x56mm.jpg

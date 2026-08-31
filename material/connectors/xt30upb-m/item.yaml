@@ -1,0 +1,25 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: xt30upb-m
+name: XT30UPB-M 公头（PCB 焊板）
+aliases:
+  - XT30UPBM
+  - XT30UPB-M
+kind: connector
+category: xt
+package: XT30-male-pcb
+qty: 5
+status: 现有
+lcsc: C428721
+lcsc_trust: equivalent
+specs:
+  family: XT
+  form: XT30-male-pcb
+  pcb: true
+  lcsc_ref: C428721
+notes:
+  - PCB 可用以本卡片 specs.pcb 为准。
+summary: XT30UPB-M 公头（PCB 焊板） ×5，可上 PCB

@@ -1,0 +1,22 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: xt30u-f
+name: XT30U-F 母头（线端）
+aliases:
+  - XT30UF
+  - XT30U-F
+kind: connector
+category: xt
+package: XT30-female-wire
+qty: 5
+status: 现有
+specs:
+  family: XT
+  form: XT30-female-wire
+  pcb: false
+notes:
+  - PCB 可用以本卡片 specs.pcb 为准。
+summary: XT30U-F 母头（线端） ×5，线束用

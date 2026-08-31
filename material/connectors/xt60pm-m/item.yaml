@@ -1,0 +1,22 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: xt60pm-m
+name: XT60PM-M 公头（PCB 骑板）
+aliases:
+  - XT60PMM
+  - XT60PM-M
+kind: connector
+category: xt
+package: XT60-male-pcb
+qty: 1
+status: 现有
+specs:
+  family: XT
+  form: XT60-male-pcb
+  pcb: true
+notes:
+  - PCB 可用以本卡片 specs.pcb 为准。
+summary: XT60PM-M 公头（PCB 骑板） ×1，可上 PCB

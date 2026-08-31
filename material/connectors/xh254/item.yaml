@@ -1,0 +1,67 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: xh254
+name: XH2.54 接插件
+aliases:
+  - XH2.54
+  - JST XH
+  - XH
+kind: connector
+category: wire-to-board
+package: XH2.54
+qty: null
+qty_label: 见 variants
+status: 现有
+specs:
+  pitch_mm: 2.54
+  family: XH
+variants:
+  - id: xh254-2p
+    pins: 2
+    straight_sets: 100
+    right_angle: 50
+    includes: 公插头+母端子
+  - id: xh254-3p
+    pins: 3
+    straight_sets: 50
+    right_angle: 50
+    includes: 公插头+母端子
+  - id: xh254-4p
+    pins: 4
+    straight_sets: 20
+    right_angle: 50
+    includes: 公插头+母端子
+  - id: xh254-5p
+    pins: 5
+    straight_sets: 20
+    right_angle: 50
+    includes: 公插头+母端子
+  - id: xh254-6p
+    pins: 6
+    straight_sets: 20
+    right_angle: 50
+    includes: 公插头+母端子
+  - id: xh254-7p
+    pins: 7
+    qty_label: 已补货，数量待录
+    note: "接 D153C H1/H2 可 1:1 同序直连"
+  - id: xh254-8p
+    pins: 8
+    straight_sets: 20
+    right_angle_sets: 20
+    includes: 公插头+母端子
+  - id: xh254-crimp
+    form: loose-terminal
+    male: 300
+    female: 200
+pending:
+  - footprint
+  - qty
+warnings:
+  - 淘宝「XH2.54」不保证等同原厂 JST XH 2.50。PCB 使用前必须按商家尺寸图确认针距。
+notes:
+  - 可用规格：2 / 3 / 4 / 5 / 6 / 7 / 8P。有 SN-2549 可自制线束。
+summary: 2.54 mm XH 系列 2–8P；7P 已补货数量待录。针距须按商家图确认

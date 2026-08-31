@@ -1,0 +1,19 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: coupling-od22-3
+name: 铝合金法兰联轴器 OD22 / 3 mm
+aliases:
+  - 法兰联轴器 22mm
+kind: mechanical
+category: coupling
+qty: null
+qty_label: —
+status: 现有
+specs:
+  od_mm: 22
+  bore_mm: 3
+  type: flange
+summary: 外径 22 mm，柱孔 3 mm

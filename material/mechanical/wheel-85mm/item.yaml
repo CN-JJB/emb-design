@@ -1,0 +1,19 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: wheel-85mm
+name: 天然橡胶实心轮 85 mm
+aliases:
+  - 85mm 轮
+kind: mechanical
+category: wheel
+qty: 2
+status: 已购
+specs:
+  diameter_mm: 85
+  bore: 6mm hex clamp coupler
+notes:
+  - 与 MG513 套件自带的 65 mm 轮是两套方案。
+summary: 直径 85 mm，配 6 mm 孔径抱紧式六角联轴器，2 只

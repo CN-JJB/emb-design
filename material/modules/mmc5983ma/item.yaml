@@ -1,0 +1,19 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: mmc5983ma
+name: MMC5983MA 三轴磁传感器模块
+aliases:
+  - MMC5983MA
+  - 美新
+kind: module
+category: module
+qty: 1
+status: 已购-在途
+devices_id: mmc5983ma
+devices_entry: ../../../devices/美新 MMC5983MA模块 三轴磁传感器/INDEX.md
+notes:
+  - 针序、尺寸、手册在 devices，本目录只记库存数量与状态。
+summary: 1 块在途；15×10 mm 四针 VIN/GND/SDA/SCL

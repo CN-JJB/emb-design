@@ -1,0 +1,19 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: esp32-c3-supermini
+name: ESP32-C3 SuperMini
+aliases:
+  - ESP32-C3 SuperMini
+  - C3 supermini
+kind: module
+category: module
+qty: 1
+status: 现有
+devices_id: esp32-c3-supermini
+devices_entry: ../../../devices/esp32-c3-supermini/INDEX.md
+notes:
+  - 针序、尺寸、手册在 devices，本目录只记库存数量与状态。
+summary: 1 块；18.00×22.50 mm；原生 USB 无 CH340

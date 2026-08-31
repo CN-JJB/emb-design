@@ -1,0 +1,33 @@
+id: mmc5983ma
+name: MMC5983MA 三轴磁传感器模块
+aliases: [MMC5983MA, 美新, MEMSIC MMC5983MA]
+category: sensor
+roles: [magnetometer]
+chip: MMC5983MA
+chip_vendor: MEMSIC
+interfaces: [i2c]
+voltage:
+  chip_vdd: [2.8, 3.6]
+  first_bringup_v: 3.3
+  module_5v_verified: false
+i2c:
+  address_7bit: "0x30"
+  product_id: {reg: "0x2F", value: "0x30"}
+pins:
+  order: [VIN, GND, SDA, SCL]
+  spi_brought_out: false
+  int_brought_out: false
+mechanical:
+  pcb_mm: [15.00, 10.00]
+  source: merchant-drawing
+  measured: false
+warnings:
+  - 没有模块原理图，先用 3.3 V，不要假定 VIN 耐 5 V。
+  - 四针板只能走 I²C；SparkFun 库的 SPI/INT 示例不适用。
+  - 远离电机、磁铁、功率电感和大电流线。
+files:
+  entry: INDEX.md
+  hardware: docs/module-and-wiring.md
+  mechanical: mechanical/module-15x10mm.webp
+  datasheet: references/chip/MMC5983MA-Datasheet-RevA.pdf
+  driver: software/SparkFun-MMC5983MA-Arduino-v1.1.5-6e5c914.zip

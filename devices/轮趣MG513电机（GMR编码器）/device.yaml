@@ -1,0 +1,31 @@
+id: mg513-gmr
+name: MG513 GMR 编码器电机套件
+aliases: [MG513, MG513P30_12V, 轮趣MG513, GMR编码器电机]
+category: mechanical
+roles: [dc-motor, encoder]
+chip: null
+module_vendor: 轮趣
+interfaces: [XH2.54-6P]
+voltage:
+  motor_v: 12
+  motor_range_v: [11, 16]
+  encoder_v: [3.3, 5]
+electrical:
+  gear_ratio: "1:30"
+  rated_a: 0.36
+  stall_a: 3.2
+  encoder_ppr: 500
+pins:
+  xh6p: [M+, ENC_GND, ENC_B, ENC_A, ENC_VCC, M-]
+mechanical:
+  shaft_mm: 6
+  shaft: D-cut
+  length_mm: 75.1
+warnings:
+  - 按堵转 3.2 A 选驱动和电源，不要按额定 0.36 A。
+  - 与 D153C 电机座 6P 线序方向相反。
+files:
+  entry: INDEX.md
+  hardware: docs/hardware.md
+  pinout: images/mg513-gmr-pinout.png
+  motor: mechanical/mg513-gmr-mechanical-dimensions.png

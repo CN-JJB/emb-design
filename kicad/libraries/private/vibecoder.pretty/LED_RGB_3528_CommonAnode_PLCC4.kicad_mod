@@ -1,0 +1,77 @@
+(footprint "LED_RGB_3528_CommonAnode_PLCC4"
+	(version 20241229)
+	(generator "vibecoder-handbuilt")
+	(layer "F.Cu")
+	(descr "3528 RGB common-anode LED, 3.5 x 2.8 x 1.9 mm, 4 terminals. Land taken straight from the maker drawing the user supplied: pads 1.8 x 0.8 mm with a 1.6 mm horizontal gap and a 0.7 mm vertical gap, i.e. centres at (+/-1.7, +/-0.75). Pad numbers follow the MAKER's numbering, so pad 1 is the part's own pin 1 and the silk marker means what it says: 1 = R cathode (top left), 2 = common anode (top right), 3 = G cathode (bottom left), 4 = B cathode (bottom right). Pair it with vibecoder:LED_RGB_CommonAnode_1R_2A_3G_4B, whose pin numbers match; Device:LED_ARGB does NOT (it is 1=A, 2=RK) and would put +3V3 on the red cathode. 3D: LED_RGB_3528_PLCC4.step, bound 2026-08-29 after the USER found and downloaded a real model (original filename AAA3528.STEP, SolidWorks 2008 export). FreeCAD measures it at exactly 3.500 x 2.800 x 1.900 mm and its four bottom terminals sit at (+/-1.302, +/-0.725) measuring 0.704 x 0.750, which land inside these pads with 0.95 mm of pad left outside the body for the fillet - i.e. the model independently confirms the maker's recommended land. Transform rotate(-90,0,0) offset(0,0,1) was verified by rendering, not estimated: the body sits flush on the copper. This replaces the earlier deliberate no-model state: the official AAA3528ESGCT.step this part's official footprint points at does not exist anywhere (not in this KiCad 10 install, 38 files for 99 footprints in that library, and not in upstream kicad-packages3D either, 39 files total), and the nearest official body, Wuerth 150141M173100 at 3.2x2.8, is 0.3 mm UNDERSIZE in X, which UNDER-REPORTS clearance - so nothing was borrowed until a correct model existed. NOTE the model carries a single 0.88 mm corner chamfer near one terminal; that is the Kingbright body's own marker and is NOT the pin-1 authority for this part - the silk dot and the maker drawing are. No official footprint matches this land - a geometry scan of all 15447 official footprints found nothing at 1.8x0.8 on (+/-1.7, +/-0.75).")
+	(tags "LED RGB common anode 3528 PLCC-4")
+	(attr smd)
+	(property "Reference" "D"
+		(at 0 -2.3 0)
+		(layer "F.SilkS")
+		(uuid "d0000000-0000-4000-8000-000000000001")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "LED_RGB_3528_CommonAnode_PLCC4"
+		(at 0 2.3 0)
+		(layer "F.Fab")
+		(uuid "d0000000-0000-4000-8000-000000000002")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Description" "3528 RGB common anode, 1=RK 2=A 3=GK 4=BK"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0000000-0000-4000-8000-000000000003")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d0000000-0000-4000-8000-000000000004")
+		(effects (font (size 0.8 0.8) (thickness 0.12)))
+	)
+
+	(fp_rect (start -1.75 -1.4) (end 1.75 1.4)
+		(stroke (width 0.05) (type default)) (fill no)
+		(layer "F.Fab") (uuid "d0000000-0000-4000-8000-000000000010"))
+	(fp_line (start -1.75 -0.6) (end -1.15 -1.4)
+		(stroke (width 0.05) (type default)) (layer "F.Fab")
+		(uuid "d0000000-0000-4000-8000-000000000011"))
+
+	(fp_line (start -0.6 -1.55) (end 0.6 -1.55)
+		(stroke (width 0.12) (type default)) (layer "F.SilkS")
+		(uuid "d0000000-0000-4000-8000-000000000020"))
+	(fp_line (start -0.6 1.55) (end 0.6 1.55)
+		(stroke (width 0.12) (type default)) (layer "F.SilkS")
+		(uuid "d0000000-0000-4000-8000-000000000021"))
+	(fp_circle (center -2.9 -1.2) (end -2.75 -1.2)
+		(stroke (width 0.3) (type default)) (fill solid)
+		(layer "F.SilkS") (uuid "d0000000-0000-4000-8000-000000000022"))
+
+	(fp_rect (start -2.85 -1.65) (end 2.85 1.65)
+		(stroke (width 0.05) (type default)) (fill no)
+		(layer "F.CrtYd") (uuid "d0000000-0000-4000-8000-000000000030"))
+
+	(pad "1" smd rect
+		(at -1.7 -0.75) (size 1.8 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d0000000-0000-4000-8000-000000000040"))
+	(pad "2" smd rect
+		(at 1.7 -0.75) (size 1.8 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d0000000-0000-4000-8000-000000000041"))
+	(pad "3" smd rect
+		(at -1.7 0.75) (size 1.8 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d0000000-0000-4000-8000-000000000042"))
+	(pad "4" smd rect
+		(at 1.7 0.75) (size 1.8 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d0000000-0000-4000-8000-000000000043"))
+	(model "${CONTROL_LIB}/private/vibecoder.3dshapes/LED_RGB_3528_PLCC4.step"
+		(offset (xyz 0 0 1))
+		(scale (xyz 1 1 1))
+		(rotate (xyz -90 0 0))
+	)
+)

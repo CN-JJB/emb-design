@@ -1,0 +1,39 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: usb-c-16p
+name: USB-C 16P 插板母座
+aliases:
+  - USB-C 16P母座
+  - Type-C母座 16P
+  - Type-C母座_16P_4脚插板_黑色
+  - "671124"
+kind: connector
+category: usb
+package: USB-C-16P-midmount
+qty: null
+qty_label: 数量待录
+status: 现有
+solder: caution
+specs:
+  type: usb-c-receptacle
+  mount: SMD-midmount
+  pins: 16
+  board_legs: 4
+  color: 黑色
+  voltage: 5V
+  current: 3A
+  sku: "671124"
+pending:
+  - footprint
+  - qty
+files:
+  image: images/product.png
+warnings:
+  - 16P + 4 脚插板（中置/插板），不是 24P 全脚 Type-C。没有尺寸图之前 PCB 封装不可定稿。
+  - 16P 脚距密，手焊需注意。
+notes:
+  - 商品型号：Type-C母座_16P_4脚插板_黑色。商品编号 671124。整盘 1000 只是工厂包装，不是库存数。
+summary: USB-C 16P 黑色插板母座，5 V / 3 A。无尺寸图，封装不可定稿

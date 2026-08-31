@@ -1,0 +1,48 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: usb-a-male-smd
+name: USB-A 贴片焊板公头
+aliases:
+  - USB-A PCB公头
+  - USB焊板公头
+  - 贴片USB公头
+kind: connector
+category: usb
+package: USB-A-male-SMD
+qty: null
+qty_label: 商品页 10 个装，数量待录
+status: 现有
+solder: caution
+specs:
+  type: usb-a-plug
+  mount: SMD
+  pins: 4
+  shell: 黑色胶
+  voltage_rating: DC12V
+  current_rating: 0.1A
+  dielectric: AC 500V
+  temp: "-25~80°C"
+  life_cycles: 5000
+  insertion_force: 3-20N
+  shell_width_mm: 12.8
+  shell_length_mm: 18.8
+  overall_length_mm: 20.7
+  height_mm: 4.5
+  tongue_length_mm: 14.75
+  pad_pitch_mm: 2.5
+  pad_span_mm: 11.4
+pending:
+  - qty
+files:
+  image: images/product.png
+  mechanical: mechanical/dimensions.png
+warnings:
+  - 商品页额定 DC12V / 0.1A，不要当大电流 USB 供电口用。
+  - 商家注明手工测量可能有 0.5–1 mm 误差，封装按尺寸图画完仍须对实物。
+notes:
+  - 针序以实物/商品图标注为准：GND、D−、D+、VCC。
+  - 贴片焊板公头，从 PCB 边缘伸出，不是母座。
+summary: USB-A 贴片焊板公头，壳体约 12.8×18.8。数量待录

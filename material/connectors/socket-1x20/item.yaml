@@ -1,0 +1,20 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: socket-1x20
+name: 1×20P 直插单排母
+aliases:
+  - 1×20P直插单排母
+kind: connector
+category: header
+package: 2.54mm
+qty: 10
+status: 现有
+specs:
+  pitch_mm: 2.54
+  form: female-1x20
+notes:
+  - 1×40P 排针可折断，1×2 / 1×3 一类小规格不必单独采购。
+summary: 1×20P 直插单排母，10 条

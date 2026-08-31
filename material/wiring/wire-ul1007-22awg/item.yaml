@@ -1,0 +1,26 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: wire-ul1007-22awg
+name: UL1007 22 AWG 镀锡铜电子线
+aliases:
+  - UL1007 22AWG
+  - 22 AWG
+kind: wiring
+category: wire
+qty: 10
+unit: m
+colors:
+  - 红
+  - 黑
+status: 现有
+specs:
+  awg: 22
+  construction: 17/0.16TS
+  rating: RoHS
+  current_free_air_a: 5
+warnings:
+  - 不要用 22 AWG 接 10 A 保险丝支路：软短路会先烧穿导线而保险丝不动作。
+summary: 22 AWG 17/0.16TS，红/黑各 10 m，自由空气约 5 A

@@ -1,0 +1,20 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: ferrule-ve
+name: VE 管型冷压端子
+aliases:
+  - VE端子
+  - 管型端子
+kind: wiring
+category: harness
+qty: 800
+status: 现有
+specs:
+  type: ferrule-VE
+  assortment: true
+notes:
+  - 压接钳见 tools/hsc8-10s。
+summary: VE 管型冷压端子混合套装 800 只；配 HSC8 10S 压接

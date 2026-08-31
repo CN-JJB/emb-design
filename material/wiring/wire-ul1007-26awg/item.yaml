@@ -1,0 +1,26 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: wire-ul1007-26awg
+name: UL1007 26 AWG 镀锡铜电子线
+aliases:
+  - UL1007 26AWG
+  - 26 AWG
+kind: wiring
+category: wire
+qty: 10
+unit: m
+colors:
+  - 红
+  - 黑
+status: 现有
+specs:
+  awg: 26
+  construction: 7/0.16TS
+  rating: RoHS
+  current_free_air_a: 2
+notes:
+  - 每种颜色 10 m。
+summary: 26 AWG 7/0.16TS，红/黑各 10 m，自由空气约 2 A

@@ -1,0 +1,25 @@
+# 库存卡片。数量、状态、C 编号、待补项读这里。
+# 模块的针序/手册在 devices（见 devices_id），不要把 PDF 复制进来。
+# 未写的字段表示尚未确认，禁止按同名商品推测封装。
+
+schema_version: 1
+id: wire-3239-18awg
+name: 3239 18 AWG 镀锡铜硅胶高温线
+aliases:
+  - 3239
+  - 18 AWG 硅胶线
+kind: wiring
+category: wire
+qty: 10
+unit: m
+colors:
+  - 红
+  - 黑
+status: 现有
+specs:
+  awg: 18
+  type: silicone-3239
+  current_free_air_a: 16
+warnings:
+  - 12 V 大电流支路（电机、视觉板）只能用 18 AWG 硅胶线。线规是保险丝定值的约束。
+summary: 18 AWG 硅胶线，红/黑各 10 m，自由空气约 16 A
